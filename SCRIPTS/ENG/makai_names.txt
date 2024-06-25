@@ -1,0 +1,187 @@
+﻿# Makai no Bookmark Dialogue Layout v1.0
+# This is a straightforward format for editing Makai no Bookmark script files.
+# You can do a variety of things with it.
+# By using \ you can specify special commands.
+# Here's a list of all commands:
+# \N        = allows linebreaking, you can utilize this to insert more dialogue.
+# \BLACK    = Changes text color to black and outlines to white.
+# \BLUE1    = Changes text color to blue.
+# \BLUE2    = Changes outlines to blue.
+# \RED1
+# \RED2
+# \GREEN1
+# \GREEN2
+# \ORANGE
+# \RESTORE  = Changes text to the default color.
+
+
+ln: 56
+
+1
+jp: 清麿
+
+2
+jp: ガッシュ
+
+3
+jp: 恵
+
+4
+jp: ティオ
+
+5
+jp: フォルゴレ
+
+6
+jp: キャンチョメ
+
+7
+jp: シェリー
+
+8
+jp: ブラゴ
+
+9
+jp: ナゾナゾ博土
+
+10
+jp: キッド
+
+11
+jp: リィエン
+
+12
+jp: ウォンレイ
+
+13
+jp: グスタフ
+
+14
+jp: バリー
+
+15
+jp: サンビーム
+
+16
+jp: ウマゴン
+
+17
+jp: フリガロ
+
+18
+jp: ポッケリオ
+
+19
+jp: ゴフレ
+
+20
+jp: ロブノス
+
+21
+jp: レイコム
+
+22
+jp: スギナ
+
+23
+jp: フェイン
+
+24
+jp: ザバス
+
+25
+jp: キクロプ
+
+26
+jp: バルトロ
+
+27
+jp: ジーリオ
+
+28
+jp: ネーロ
+
+29
+jp: ネオネーロ
+
+30
+jp: マスネー
+
+31
+jp: ベルーバ
+
+32
+jp: 神殺星
+
+33
+jp: ギャルミ
+
+34
+jp: プロフォルート
+
+35
+jp: スーフェリア
+
+36
+jp: ユーフォリア
+
+37
+jp: アカーシャ
+
+38
+jp: バイオラ
+
+39
+jp: ボダイジュ
+
+40
+jp: ソーマ
+
+41
+jp: クニミツ
+
+42
+jp:  ゾフィス
+
+43
+jp: ゼオン
+
+44
+jp: ワイズマン
+
+45
+jp: ココ
+
+46
+jp: デュフォー
+
+47
+jp: コトハ
+
+48
+jp: スズメ
+
+49
+jp: バルカン
+
+50
+jp: アポロ
+
+51
+jp: 伊熊虎虎
+
+52
+jp: ？？？
+
+53
+jp: ナスカ
+
+54
+jp: ビブリオ
+
+55
+jp: ココメロ
+
+56
+jp: ナオミ
+

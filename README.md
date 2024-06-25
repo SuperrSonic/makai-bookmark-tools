@@ -1,2 +1,3 @@
-# makai-bookmark-tools
-Hosts the script converter for Makai no Bookmark and the decoded scripts.
+# Makai no Bookmark test
+Converter tool still not ready yet.
+162/874 kanji have been identified.

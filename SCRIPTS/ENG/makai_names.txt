@@ -19,169 +19,226 @@ ln: 56
 
 1
 jp: 清麿
+en: Kiyo
 
 2
 jp: ガッシュ
+en: Zatch
 
 3
 jp: 恵
+en: Megumi
 
 4
 jp: ティオ
+en: Tia
 
 5
 jp: フォルゴレ
+en: Folgore
 
 6
 jp: キャンチョメ
+en: Kanchomé
 
 7
 jp: シェリー
+en: Sherry
 
 8
 jp: ブラゴ
+en: Brago
 
 9
 jp: ナゾナゾ博土
+en: Dr. Riddles
 
 10
 jp: キッド
+en: Kido
 
 11
 jp: リィエン
+en: Li-en
 
 12
 jp: ウォンレイ
+en: Wonrei
 
 13
 jp: グスタフ
+en: Gustav
 
 14
 jp: バリー
+en: Bari
 
 15
 jp: サンビーム
+en: Sunbeam
 
 16
 jp: ウマゴン
+en: Ponygon
 
 17
 jp: フリガロ
+en: Furigaro
 
 18
 jp: ポッケリオ
+en: Pokkerio
 
 19
 jp: ゴフレ
+en: Gofure
 
 20
 jp: ロブノス
+en: Robnos
 
 21
 jp: レイコム
+en: Reycom
 
 22
 jp: スギナ
+en: Sugino
 
 23
 jp: フェイン
+en: Fein
 
 24
 jp: ザバス
+en: Zabas
 
 25
 jp: キクロプ
+en: Kikuropu
 
 26
 jp: バルトロ
+en: Baltro
 
 27
 jp: ジーリオ
+en: Giglio
 
 28
 jp: ネーロ
+en: Nero
 
 29
 jp: ネオネーロ
+en: Neo Nero
 
 30
 jp: マスネー
+en: Massinet
 
 31
 jp: ベルーバ
+en: Bellba
 
 32
 jp: 神殺星
+en: Slayer Star
 
 33
 jp: ギャルミ
+en: Galmi
 
 34
 jp: プロフォルート
+en: Prophort
 
 35
 jp: スーフェリア
+en: Supheria
 
 36
 jp: ユーフォリア
+en: Euphoria
 
 37
 jp: アカーシャ
+en: Akasha
 
 38
 jp: バイオラ
+en: Viola
 
 39
 jp: ボダイジュ
+en: Bodaiju
 
 40
 jp: ソーマ
+en: Soma
 
 41
 jp: クニミツ
+en: Kunimitsu
 
 42
-jp:  ゾフィス
+jp: ゾフィス
+en: Zofis
 
 43
 jp: ゼオン
+en: Zeno
 
 44
 jp: ワイズマン
+en: Wiseman
 
 45
 jp: ココ
+en: Koko
 
 46
 jp: デュフォー
+en: Dufort
 
 47
 jp: コトハ
+en: Kotoha
 
 48
 jp: スズメ
+en: Suzume
 
 49
 jp: バルカン
+en: Volcan
 
 50
 jp: アポロ
+en: Apollo
 
 51
 jp: 伊熊虎虎
+en: Torako Iikuma
+
 
 52
 jp: ？？？
+en: ???
 
 53
 jp: ナスカ
+en: Nasuka
 
 54
 jp: ビブリオ
+en: Biblio
 
 55
 jp: ココメロ
+en: Cocomero
 
 56
 jp: ナオミ
+en: Naomi
 

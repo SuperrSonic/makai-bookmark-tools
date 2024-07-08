@@ -207,7 +207,7 @@ en: Kotoha
 
 48
 jp: スズメ
-en: Suzume
+en: Suzy
 
 49
 jp: バルカン

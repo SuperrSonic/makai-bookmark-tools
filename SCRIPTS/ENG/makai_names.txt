@@ -135,7 +135,7 @@ en: Neo Nero
 
 30
 jp: マスネー
-en: Massinet
+en: Massenet
 
 31
 jp: ベルーバ

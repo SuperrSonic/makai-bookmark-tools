@@ -1,0 +1,529 @@
+﻿# Makai no Bookmark Dialogue Layout v1.0
+# This is a straightforward format for editing Makai no Bookmark script files.
+# You can do a variety of things with it.
+# By using \ you can specify special commands.
+# Here's a list of all commands:
+# \N        = Linebreak, specify more than 1 to insert new lines.
+# \BLACK    = Changes text color to black and outlines to white.
+# \BLUE1    = Changes text color to blue.
+# \BLUE2    = Changes outlines to blue.
+# \RED1
+# \RED2
+# \GREEN1
+# \GREEN2
+# \ORANGE
+# \RESTORE  = Changes text to the default color.
+
+
+ln: 170
+
+1
+jp: \BLUE1ワカナのしおり\RESTOREが\N新たに合成できました
+
+2
+jp: \BLUE1ハマチのしおり\RESTOREが\N新たに合成できました
+
+3
+jp: \BLUE1メジロのしおり\RESTOREが\N新たに合成できました
+
+4
+jp: \BLUE1ブリのしおり\RESTOREが\N新たに合成できました
+
+5
+jp: \BLUE1カンブリのしおり\RESTOREが\N新たに合成できました
+
+6
+jp: \BLUE1心のタネのしおり\RESTOREが\N新たに合成できました
+
+7
+jp: \BLUE1心のしんめのしおり\RESTOREが\N新たに合成できました
+
+8
+jp: \BLUE1心のつぼみのしおり\RESTOREが\N新たに合成できました
+
+9
+jp: \BLUE1心の花のしおり\RESTOREが\N新たに合成できました
+
+10
+jp: \BLUE1心の果実のしおり\RESTOREが\N新たに合成できました
+
+11
+jp: \BLUE1みかんのしおり\RESTOREが\N新たに合成できました
+
+12
+jp: \BLUE1いよかんのしおり\RESTOREが\N新たに合成できました
+
+13
+jp: \BLUE1夏みかんのしおり\RESTOREが\N新たに合成できました
+
+14
+jp: \BLUE1ひこ星のしおり\RESTOREが\N新たに合成できました
+
+15
+jp: \BLUE1おり姫のしおり\RESTOREが\N新たに合成できました
+
+16
+jp: \BLUE1天の川のしおり\RESTOREが\N新たに合成できました
+
+17
+jp: \BLUE1半情のしおり\RESTOREが\N新たに合成できました
+
+18
+jp: \BLUE1熱き半情のしおり\RESTOREが\N新たに合成できました
+
+19
+jp: \BLUE1げどくのしおり\RESTOREが\N新たに合成できました
+
+20
+jp: \BLUE1おはらいのしおり\RESTOREが\N新たに合成できました
+
+21
+jp: \BLUE1まひ治しのしおり\RESTOREが\N新たに合成できました
+
+22
+jp: \BLUE1快足のしおり\RESTOREが\N新たに合成できました
+
+23
+jp: \BLUE1リラックスのしおり\RESTOREが\N新たに合成できました
+
+24
+jp: \BLUE1もうどくのしおり\RESTOREが\N新たに合成できました
+
+25
+jp: \BLUE1じゅそのしおり\RESTOREが\N新たに合成できました
+
+26
+jp: \BLUE1ますいのしおり\RESTOREが\N新たに合成できました
+
+27
+jp: \BLUE1どんかのしおり\RESTOREが\N新たに合成できました
+
+28
+jp: \BLUE1さくらんのしおり\RESTOREが\N新たに合成できました
+
+29
+jp: \BLUE1みきわめのしおり\RESTOREが\N新たに合成できました
+
+30
+jp: \BLUE1短剣のしおり\RESTOREが\N新たに合成できました
+
+31
+jp: \BLUE1弓矢のしおり\RESTOREが\N新たに合成できました
+
+32
+jp: \BLUE1長剣のしおり\RESTOREが\N新たに合成できました
+
+33
+jp: \BLUE1斧のしおり\RESTOREが\N新たに合成できました
+
+34
+jp: \BLUE1槍のしおり\RESTOREが\N新たに合成できました
+
+35
+jp: \BLUE1日本刀のしおり\RESTOREが\N新たに合成できました
+
+36
+jp: \BLUE1バルトロのしおり\RESTOREが\N新たに合成できました
+
+37
+jp: \BLUE1石の守りのしおり\RESTOREが\N新たに合成できました
+
+38
+jp: \BLUE1鉛の守りのしおり\RESTOREが\N新たに合成できました
+
+39
+jp: \BLUE1銅の守りのしおり\RESTOREが\N新たに合成できました
+
+40
+jp: \BLUE1銀の守りのしおり\RESTOREが\N新たに合成できました
+
+41
+jp: \BLUE1鉄鋼の守りのしおり\RESTOREが\N新たに合成できました
+
+42
+jp: \BLUE1水晶の守りのしおり\RESTOREが\N新たに合成できました
+
+43
+jp: \BLUE1キクロプのしおり\RESTOREが\N新たに合成できました
+
+44
+jp: \BLUE1やさしさのしおり\RESTOREが\N新たに合成できました
+
+45
+jp: \BLUE1したしみのしおり\RESTOREが\N新たに合成できました
+
+46
+jp: \BLUE1おもいやりのしおり\RESTOREが\N新たに合成できました
+
+47
+jp: \BLUE1あたたかさのしおり\RESTOREが\N新たに合成できました
+
+48
+jp: \BLUE1しんらいのしおり\RESTOREが\N新たに合成できました
+
+49
+jp: \BLUE1そんけいのしおり\RESTOREが\N新たに合成できました
+
+50
+jp: \BLUE1ゾフィスのしおり\RESTOREが\N新たに合成できました
+
+51
+jp: \BLUE1バンタムのしおり\RESTOREが\N新たに合成できました
+
+52
+jp: \BLUE1フェザーのしおり\RESTOREが\N新たに合成できました
+
+53
+jp: \BLUE1ミドルのしおり\RESTOREが\N新たに合成できました
+
+54
+jp: \BLUE1ヘビーのしおり\RESTOREが\N新たに合成できました
+
+55
+jp: \BLUE1真心のしおり\RESTOREが\N新たに合成できました
+
+56
+jp: \BLUE1決心のしおり\RESTOREが\N新たに合成できました
+
+57
+jp: \BLUE1熱心のしおり\RESTOREが\N新たに合成できました
+
+58
+jp: \BLUE1会心のしおり\RESTOREが\N新たに合成できました
+
+59
+jp: \BLUE1成長のカギのしおり\RESTOREが\N新たに合成できました
+
+60
+jp: \BLUE1発展のカギのしおり\RESTOREが\N新たに合成できました
+
+61
+jp: \BLUE1飛躍のカギのしおり\RESTOREが\N新たに合成できました
+
+62
+jp: \BLUE1凸のしおり\RESTOREが\N新たに合成できました
+
+63
+jp: \BLUE1凹のしおり\RESTOREが\N新たに合成できました
+
+64
+jp: \BLUE1凸凹のしおり\RESTOREが\N新たに合成できました
+
+65
+jp: \BLUE1優しい王様のしおり\RESTOREが\N新たに合成できました
+
+66
+jp: \BLUE1電撃のしおり\RESTOREが\N新たに合成できました
+
+67
+jp: \BLUE1聖母のしおり\RESTOREが\N新たに合成できました
+
+68
+jp: \BLUE1変化のしおり\RESTOREが\N新たに合成できました
+
+69
+jp: \BLUE1重力のしおり\RESTOREが\N新たに合成できました
+
+70
+jp: \BLUE1知識のしおり\RESTOREが\N新たに合成できました
+
+71
+jp: \BLUE1武道のしおり\RESTOREが\N新たに合成できました
+
+72
+jp: \BLUE1進化のしおり\RESTOREが\N新たに合成できました
+
+73
+jp: \BLUE1どくよけのしおり\RESTOREが\N新たに合成できました
+
+74
+jp: \BLUE1のろいよけのしおり\RESTOREが\N新たに合成できました
+
+75
+jp: \BLUE1まひしらずのしおり\RESTOREが\N新たに合成できました
+
+76
+jp: \BLUE1スローなしのしおり\RESTOREが\N新たに合成できました
+
+77
+jp: \BLUE1めいせきのしおり\RESTOREが\N新たに合成できました
+
+78
+jp: \BLUE1ナオミのしおり\RESTOREが\N新たに合成できました
+
+79
+jp: \BLUE1こかつの泉のしおり\RESTOREが\N新たに合成できました
+
+80
+jp: \BLUE1活力の泉のしおり\RESTOREが\N新たに合成できました
+
+81
+jp: \BLUE1心の泉のしおり\RESTOREが\N新たに合成できました
+
+82
+jp: \BLUE1神秘の泉のしおり\RESTOREが\N新たに合成できました
+
+83
+jp: \BLUE1もろはのしおり\RESTOREが\N新たに合成できました
+
+84
+jp: \BLUE1エースのしおり\RESTOREが\N新たに合成できました
+
+85
+jp: \BLUE1ジョーカーのしおり\RESTOREが\N新たに合成できました
+
+86
+jp: \BLUE1奇跡のしおり\RESTOREが\N新たに合成できました
+
+87
+jp: \BLUE1仲間のしおり\RESTOREが\N新たに合成できました
+
+88
+jp: \BLUE1雷のしおり\RESTOREが\N新たに合成できました
+
+89
+jp: \BLUE1聖のしおり\RESTOREが\N新たに合成できました
+
+90
+jp: \BLUE1変のしおり\RESTOREが\N新たに合成できました
+
+91
+jp: \BLUE1重のしおり\RESTOREが\N新たに合成できました
+
+92
+jp: \BLUE1知のしおり\RESTOREが\N新たに合成できました
+
+93
+jp: \BLUE1武のしおり\RESTOREが\N新たに合成できました
+
+94
+jp: \BLUE1進のしおり\RESTOREが\N新たに合成できました
+
+95
+jp: \BLUE1白紙のしおり\RESTOREが\N新たに合成できました
+
+96
+jp: \BLUE1七夕のしおり\RESTOREが\N新たに合成できました
+
+97
+jp: \BLUE1退魔のしおり\RESTOREが\N新たに合成できました
+
+98
+jp: \BLUE1第六感のしおり\RESTOREが\N新たに合成できました
+
+99
+jp: \BLUE1ザバスのしおり\RESTOREが\N新たに合成できました
+
+100
+jp: \BLUE1フェインのしおり\RESTOREが\N新たに合成できました
+
+101
+jp: \BLUE1バルカンのしおり\RESTOREが\N新たに合成できました
+
+102
+jp: \BLUE1ハコのしおり\RESTOREが\N新たに合成できました
+
+103
+jp: \BLUE1ワリバシのしおり\RESTOREが\N新たに合成できました
+
+104
+jp: \BLUE1魚のレシピのしおり\RESTOREが\N新たに合成できました
+
+105
+jp: \BLUE1心のレシピのしおり\RESTOREが\N新たに合成できました
+
+106
+jp: \BLUE1健康レシピのしおり\RESTOREが\N新たに合成できました
+
+107
+jp: \BLUE1強いレシピのしおり\RESTOREが\N新たに合成できました
+
+108
+jp: \BLUE1堅いレシピのしおり\RESTOREが\N新たに合成できました
+
+109
+jp: \BLUE1賢いレシピのしおり\RESTOREが\N新たに合成できました
+
+110
+jp: \BLUE1凄いレシピのしおり\RESTOREが\N新たに合成できました
+
+111
+jp: \BLUE1ラウザルクのしおり\RESTOREが\N新たに合成できました
+
+112
+jp: \BLUE1セウシルのしおり\RESTOREが\N新たに合成できました
+
+113
+jp: \BLUE1コポルクのしおり\RESTOREが\N新たに合成できました
+
+114
+jp: \BLUE1ザケルのしおり\RESTOREが\N新たに合成できました
+
+115
+jp: \BLUE1ザケルガのしおり\RESTOREが\N新たに合成できました
+
+116
+jp: \BLUE1こころのしおり\RESTOREが\N新たに合成できました
+
+117
+jp: \BLUE1よびだしのしおり\RESTOREが\N新たに合成できました
+
+118
+jp: \BLUE1ロードのしおり\RESTOREが\N新たに合成できました
+
+119
+jp: \BLUE1電撃の証のしおり\RESTOREが\N新たに合成できました
+
+120
+jp: \BLUE1聖母の証のしおり\RESTOREが\N新たに合成できました
+
+121
+jp: \BLUE1変化の証のしおり\RESTOREが\N新たに合成できました
+
+122
+jp: \BLUE1１０１番目のしおり\RESTOREが\N新たに合成できました
+
+123
+jp: \BLUE1金色の証のしおり\RESTOREが\N新たに合成できました
+
+124
+jp: 　
+
+125
+jp: 　
+
+126
+jp: 　
+
+127
+jp: 　
+
+128
+jp: 　
+
+129
+jp: 　
+
+130
+jp: 　
+
+131
+jp: 　
+
+132
+jp: 　
+
+133
+jp: 　
+
+134
+jp: 　
+
+135
+jp: 　
+
+136
+jp: 　
+
+137
+jp: 　
+
+138
+jp: 　
+
+139
+jp: 　
+
+140
+jp: 　
+
+141
+jp: 　
+
+142
+jp: 　
+
+143
+jp: 　
+
+144
+jp: 　
+
+145
+jp: 　
+
+146
+jp: 　
+
+147
+jp: 　
+
+148
+jp: 　
+
+149
+jp: 　
+
+150
+jp: 　
+
+151
+jp: 今日はなにを\Nしますか？
+
+152
+jp: どのしおりと\Nひきかえますか？
+
+153
+jp: ん？しおりが\N足りないみたいです
+
+154
+jp: 交換いたしました
+
+155
+jp: この２種類のしおりで\N合成しますね
+
+156
+jp: 失敗したようです･･\N白紙のしおりでした･･
+
+157
+jp: あっ！！大成功です！\N２枚もできました！
+
+158
+jp: ス･･、スゴイです！\N３枚もできましたよ！
+
+159
+jp: この２種類のしおりでは\N合成できないようです
+
+160
+jp: 両方の合成枚数が\N足りないようですね⋯
+
+161
+jp: どちらかの合成枚数が\N足りないようですね⋯
+
+162
+jp: 　
+
+163
+jp: 　
+
+164
+jp: 　
+
+165
+jp: 　
+
+166
+jp: 　
+
+167
+jp: 　
+
+168
+jp: 　
+
+169
+jp: 　
+
+170
+jp: 　
+

@@ -1,0 +1,145 @@
+﻿# Makai no Bookmark Dialogue Layout v1.0
+# This is a straightforward format for editing Makai no Bookmark script files.
+# You can do a variety of things with it.
+# By using \ you can specify special commands.
+# Here's a list of all commands:
+# \N        = Linebreak, specify more than 1 to insert new lines.
+# \BLACK    = Changes text color to black and outlines to white.
+# \BLUE1    = Changes text color to blue.
+# \BLUE2    = Changes outlines to blue.
+# \RED1
+# \RED2
+# \GREEN1
+# \GREEN2
+# \ORANGE
+# \RESTORE  = Changes text to the default color.
+
+
+ln: 42
+
+1
+jp: 大変です清麿さん！！！
+
+2
+jp: 清麿さんの家の近くに
+
+3
+jp: 本のモンスターの\N気配がします･･･！
+
+4
+jp: 何だって！？
+
+5
+jp: そっちか！！
+
+6
+jp: 行くぞ！ガッシュ！！
+
+7
+jp: ウヌ！！！
+
+8
+jp: 清麿！！！\Nあの者は確か･･･
+
+9
+jp: ああ｡レイコムという\N氷の力を持つ魔物だ
+
+10
+jp: (魔界へ帰ったハズの\N魔物の実体化･･･)
+
+11
+jp: (確か、本のモンスター\Nの１人が･･･)
+
+12
+jp: (念を、どうこうとか\N言ってたな･･･)
+
+13
+jp: (その土地や物に\N残された念･･･)
+
+14
+jp: (そこから魔物を\N実体化させたのなら)
+
+15
+jp: (いったい何人の魔物が\N実体化されているのか)
+
+16
+jp: (･･･\N見当もつかないな)
+
+17
+jp: 清麿･･･？
+
+18
+jp: ガッシュ
+
+19
+jp: 本のモンスターも\Nそうだが･･･
+
+20
+jp: あのレイコムも\Nほうってはおけない！
+
+21
+jp: ウヌ･･･！
+
+22
+jp: 行くぞ！
+
+23
+jp: いたぞ！
+
+24
+jp: ガッシュ｡ヤツとは\N２度目の戦いだ
+
+25
+jp: １度目の戦いを\N思い出せ！
+
+26
+jp: ウヌ！
+
+27
+jp: 以前はラシルドが\Nきいたが･･･
+
+28
+jp: ラシルドだけに頼っては\Nヤツは倒せないぞ！
+
+29
+jp: ウヌ！わかっておる！
+
+30
+jp: 行くぞ！！！
+
+31
+jp: \RED1ラシルド\RESTORE\Nが使えるようになった！
+
+32
+jp: ････
+
+33
+jp: ････
+
+34
+jp: 清麿くん\Nもう、この辺には
+
+35
+jp: 本のモンスターは\N見当たらないわ
+
+36
+jp: そっか･･･
+
+37
+jp: っとなると･･･\Nもう、この辺では
+
+38
+jp: そうね･･･
+
+39
+jp: 別を当たってみよう
+
+40
+jp: ウヌ！
+
+41
+jp: (････)
+
+42
+jp: ナスカの手掛かりは\Nつかめないのかな？
+

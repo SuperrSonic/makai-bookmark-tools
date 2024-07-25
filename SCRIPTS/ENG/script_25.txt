@@ -1,0 +1,157 @@
+﻿# Makai no Bookmark Dialogue Layout v1.0
+# This is a straightforward format for editing Makai no Bookmark script files.
+# You can do a variety of things with it.
+# By using \ you can specify special commands.
+# Here's a list of all commands:
+# \N        = Linebreak, specify more than 1 to insert new lines.
+# \BLACK    = Changes text color to black and outlines to white.
+# \BLUE1    = Changes text color to blue.
+# \BLUE2    = Changes outlines to blue.
+# \RED1
+# \RED2
+# \GREEN1
+# \GREEN2
+# \ORANGE
+# \RESTORE  = Changes text to the default color.
+
+
+ln: 46
+
+1
+jp: ････
+
+2
+jp: ････
+
+3
+jp: 清麿｡あの者達は･･･
+
+4
+jp: ああ｡わかってる
+
+5
+jp: 心のしおりを持つ\N吉凶占師だ･･･
+
+6
+jp: フフフフフ･･･\Nあなた達ね？
+
+7
+jp: 館長のジャマをする\N人間達っていうのは？
+
+8
+jp: おまえ達･･･
+
+9
+jp: 心のしおりを持つ\N吉凶占師だな？
+
+10
+jp: だったらどうするの？
+
+11
+jp: そのしおりに吸われた\N心の力を･･･
+
+12
+jp: もとの持ち主達に\N返すのだ！！
+
+13
+jp: フン！\Nやってみな！！！
+
+14
+jp: 私達姉妹を\N倒せるのかしら？
+
+15
+jp: ウヌウ！
+
+16
+jp: オレ達は･･･\Nその為にここにいる！！
+
+17
+jp: フン！人間共が\Nナマほざきやがって！
+
+18
+jp: 姉貴！！！
+
+19
+jp: こんなヤツら\N返り討ちだぜ！！！
+
+20
+jp: もちろんよスーフェリア
+
+21
+jp: 館長のジャマをする者を\Nほうってはおけないわ
+
+22
+jp: ガッシュ！\N相手は２人だが･･･
+
+23
+jp: どっちも\N目を離すんじゃないぞ！
+
+24
+jp: ウヌ！！！\Nわかったのだ！！！
+
+25
+jp: クッ･･･！\Nなるほどね･･･
+
+26
+jp: バイオラや四天王が\Nやられたのも･･･
+
+27
+jp: 納得できるわ･･･
+
+28
+jp: な･･･何でだよ\N姉貴ィ･･･！
+
+29
+jp: 何で･･･\Nこんなヤツらに！？
+
+30
+jp: それは･･･
+
+31
+jp: 私達姉妹よりも･･･
+
+32
+jp: この子達の持つ絆の方が\N･･･クッ！
+
+33
+jp: 強かったって事ね･･･
+
+34
+jp: そっ･･･\Nそんな事かよ･･･！
+
+35
+jp: ･･･短い命だったわね
+
+36
+jp: 清麿｡だいじょうか？
+
+37
+jp: ああ･･･\Nしんどかったがな！
+
+38
+jp: だが、おかげで･･･
+
+39
+jp: 心のしおりを\N１度に２枚も回収できた
+
+40
+jp: ウヌッ
+
+41
+jp: これで、マンガにされた\N人達を助け出すのに
+
+42
+jp: １歩、前進したのだな？
+
+43
+jp: ああ･･･
+
+44
+jp: のんびりは\Nしていられないが･･･
+
+45
+jp: １歩、１歩\N確実に進む事が大事だ！
+
+46
+jp: ウヌ！！
+

@@ -1,0 +1,103 @@
+﻿# Makai no Bookmark Dialogue Layout v1.0
+# This is a straightforward format for editing Makai no Bookmark script files.
+# You can do a variety of things with it.
+# By using \ you can specify special commands.
+# Here's a list of all commands:
+# \N        = Linebreak, specify more than 1 to insert new lines.
+# \BLACK    = Changes text color to black and outlines to white.
+# \BLUE1    = Changes text color to blue.
+# \BLUE2    = Changes outlines to blue.
+# \RED1
+# \RED2
+# \GREEN1
+# \GREEN2
+# \ORANGE
+# \RESTORE  = Changes text to the default color.
+
+
+ln: 28
+
+1
+jp: 清麿！あの魔物がいる！
+
+2
+jp: ヨポポの本を燃やした\N魔物だ･･･！
+
+3
+jp: なっ･･･何！？
+
+4
+jp: (実体化した魔物が\Nこんな所にも！？)
+
+5
+jp: 清麿･･･
+
+6
+jp: 私は･･･ヨポポの様な\N魔物達の為にも
+
+7
+jp: この戦い･･･\N負けるワケにはゆかぬ！
+
+8
+jp: ああ！\Nあたりまえだ！！！
+
+9
+jp: オレが必ず･･･
+
+10
+jp: おまえをやさしい王様に\Nしてみせる！！！
+
+11
+jp: ウヌ！！！
+
+12
+jp: やったのだ！！！
+
+13
+jp: よし！
+
+14
+jp: みんな！！
+
+15
+jp: 暗くなる前に\Nこの森を抜けるぞ！
+
+16
+jp: ウォンレイ？\Nどうしたあるか？
+
+17
+jp: ガッシュは･･･
+
+18
+jp: 敗れていった魔物達の\N気持ちを･･･
+
+19
+jp: 一身に背負って\N戦っているのだな･･･
+
+20
+jp: ウォンレイ･･･
+
+21
+jp: ガッシュなら･･･
+
+22
+jp: やさしい王様に\Nなれるのかもしれぬ
+
+23
+jp: 私も、守る王になる為\Nこの戦い、負けられぬ！
+
+24
+jp: そうある！
+
+25
+jp: ウォンレイは\N負けないある！！
+
+26
+jp: あ！！！
+
+27
+jp: 急がないと\N置いて行かれるあるっ！
+
+28
+jp: ････
+

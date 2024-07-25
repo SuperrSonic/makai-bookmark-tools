@@ -1,0 +1,196 @@
+﻿# Makai no Bookmark Dialogue Layout v1.0
+# This is a straightforward format for editing Makai no Bookmark script files.
+# You can do a variety of things with it.
+# By using \ you can specify special commands.
+# Here's a list of all commands:
+# \N        = Linebreak, specify more than 1 to insert new lines.
+# \BLACK    = Changes text color to black and outlines to white.
+# \BLUE1    = Changes text color to blue.
+# \BLUE2    = Changes outlines to blue.
+# \RED1
+# \RED2
+# \GREEN1
+# \GREEN2
+# \ORANGE
+# \RESTORE  = Changes text to the default color.
+
+
+ln: 59
+
+1
+jp: 清麿さん！！！
+
+2
+jp: モチノキ港で\N本のモンスターが･･･
+
+3
+jp: 本のモンスターが\N出現しております！！
+
+4
+jp: 何！？
+
+5
+jp: よし、行ってみよう！
+
+6
+jp: 助かった･･･\N今日は日曜日か！
+
+7
+jp: ウヌ？
+
+8
+jp: 日曜なら港周辺の会社は\N休みのハズだ
+
+9
+jp: つまり、一般人を\N巻き込まなくて済む！
+
+10
+jp: ウヌゥ、そうであったか
+
+11
+jp: よし！\N行くぞ！ガッシュ！！
+
+12
+jp: ウヌ！！！
+
+13
+jp: 清麿！！！
+
+14
+jp: あれは何なのだ！？
+
+15
+jp: ん･･･何だ？
+
+16
+jp: このコンテナの中から\N出ている様だな･･･
+
+17
+jp: あかないな
+
+18
+jp: ウヌーッ！！！？
+
+19
+jp: ガッシュ！？\N何やってんだ！！！
+
+20
+jp: ウヌゥ･･･
+
+21
+jp: ふれても大丈夫かどうか\Nためしてみたのだが
+
+22
+jp: ダメだったのだ･･･
+
+23
+jp: ったく･･･
+
+24
+jp: とにかく
+
+25
+jp: こんな危険なコンテナを\Nほうってはおけない
+
+26
+jp: その為にも、この扉を\N何とかしないとな
+
+27
+jp: ウ、ウヌ！
+
+28
+jp: これは管理システムか？
+
+29
+jp: ･･･これをこうして\N･･･こうか！
+
+30
+jp: よし！
+
+31
+jp: これであのコンテナに\N入れるハズだ
+
+32
+jp: ヤツらは！？
+
+33
+jp: 清麿｡あれはロブノス\Nという者ではなかったか
+
+34
+jp: ああ･･･
+
+35
+jp: あの光線の正体は\Nヤツの術だったのか！
+
+36
+jp: 清麿！来るぞ！！
+
+37
+jp: ああ！！\N行くぞガッシュ！！！
+
+38
+jp: あ！清麿ー！！
+
+39
+jp: 清麿くん、どうだった？
+
+40
+jp: ああ｡本のモンスターは\Nいなくなったみたいだ
+
+41
+jp: そう
+
+42
+jp: こっちも異常ナシだ
+
+43
+jp: もう、モンスターは\Nどこにもいないよ
+
+44
+jp: ウヌ｡この土地はもう\N安全なのだ！
+
+45
+jp: って事は･･･
+
+46
+jp: ああ･･･
+
+47
+jp: ここでも敵の手掛かりは\N見つけられなかった
+
+48
+jp: ･･･って事になるな
+
+49
+jp: はぁ～あ！
+
+50
+jp: 何だか戦ってばっかり\Nいるわよねぇ
+
+51
+jp: そうだな･･･
+
+52
+jp: でも、敵の数だって\N無限じゃないんだ
+
+53
+jp: こうやって\N戦い続けていれば
+
+54
+jp: いつか必ず\Nビブリオの元に辿り着く
+
+55
+jp: うん！\Nきっとそうなるよ！
+
+56
+jp: ああ｡そうだな！
+
+57
+jp: ええ！
+
+58
+jp: うん！
+
+59
+jp: ウヌ！！
+

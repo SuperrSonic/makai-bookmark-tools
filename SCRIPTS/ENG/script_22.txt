@@ -1,0 +1,121 @@
+﻿# Makai no Bookmark Dialogue Layout v1.0
+# This is a straightforward format for editing Makai no Bookmark script files.
+# You can do a variety of things with it.
+# By using \ you can specify special commands.
+# Here's a list of all commands:
+# \N        = Linebreak, specify more than 1 to insert new lines.
+# \BLACK    = Changes text color to black and outlines to white.
+# \BLUE1    = Changes text color to blue.
+# \BLUE2    = Changes outlines to blue.
+# \RED1
+# \RED2
+# \GREEN1
+# \GREEN2
+# \ORANGE
+# \RESTORE  = Changes text to the default color.
+
+
+ln: 34
+
+1
+jp: ････
+
+2
+jp: おまえは･･･
+
+3
+jp: 気をつけるのだ清麿
+
+4
+jp: あの者は･･･\N吉凶占師だ！
+
+5
+jp: ････
+
+6
+jp: ああ･･･\N確かマンガの中では
+
+7
+jp: アカーシャと\N呼ばれていたな？
+
+8
+jp: ウヌ！
+
+9
+jp: という事は･･･\Nあいつもバイオラと同じ
+
+10
+jp: 心のしおりを持つ\N本のモンスター･･･
+
+11
+jp: いや･･･\N吉凶占師というワケか
+
+12
+jp: おまえ達･･･
+
+13
+jp: 運命に導かれて\Nここまで来たか？
+
+14
+jp: 運命･･･？
+
+15
+jp: 何の事なのだ？
+
+16
+jp: ････
+
+17
+jp: 自覚が無いか･･･\N本物のようだな･･･
+
+18
+jp: 清麿！
+
+19
+jp: 来るぞ･･･！\N気をつけろよガッシュ！
+
+20
+jp: ウヌ！！
+
+21
+jp: ････
+
+22
+jp: ･･･フッ
+
+23
+jp: あ･･･！
+
+24
+jp: ････
+
+25
+jp: これが･･･\Nおまえ達の運命だ･･･
+
+26
+jp: オレ達の運命･･･？
+
+27
+jp: 運命の啓示に従え
+
+28
+jp: 道は･･･\N開かれている･･･
+
+29
+jp: 清麿･･･\Nどういう意味なのだ？
+
+30
+jp: よくはわからない\N･･･だが
+
+31
+jp: オレ達がやらなきゃ\Nならないのは･･･
+
+32
+jp: 心のしおりを回収し
+
+33
+jp: 本のモンスター達を\N開放する事だ！
+
+34
+jp: ウヌ
+

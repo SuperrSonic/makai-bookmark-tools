@@ -1,0 +1,130 @@
+﻿# Makai no Bookmark Dialogue Layout v1.0
+# This is a straightforward format for editing Makai no Bookmark script files.
+# You can do a variety of things with it.
+# By using \ you can specify special commands.
+# Here's a list of all commands:
+# \N        = Linebreak, specify more than 1 to insert new lines.
+# \BLACK    = Changes text color to black and outlines to white.
+# \BLUE1    = Changes text color to blue.
+# \BLUE2    = Changes outlines to blue.
+# \RED1
+# \RED2
+# \GREEN1
+# \GREEN2
+# \ORANGE
+# \RESTORE  = Changes text to the default color.
+
+
+ln: 37
+
+1
+jp: こいつら･･･\Nさっきの！？
+
+2
+jp: 私達が以前に\N倒した魔物よ･･･
+
+3
+jp: どういう仕掛けか\N知らないけれど･･･
+
+4
+jp: 実体化しているわね
+
+5
+jp: ！？
+
+6
+jp: あれは･･･\Nあの魔物の術ね･･･
+
+7
+jp: しかし･･･
+
+8
+jp: 本も無いのに\Nなぜ術が使えるんだ？
+
+9
+jp: それに･･･\N本が無いという事は
+
+10
+jp: 本を燃やして倒す\Nやり方はできない･･･
+
+11
+jp: フン･･･
+
+12
+jp: ならば、力だけで\N倒せばいい
+
+13
+jp: ･･･！
+
+14
+jp: ･･･来るぞ
+
+15
+jp: あいつは！？
+
+16
+jp: (ガッシュの魔本を\N燃やしに来て)
+
+17
+jp: (確か、ブラゴに\N倒された･･･)
+
+18
+jp: ゴフレ･･･って\N名前だったか？
+
+19
+jp: ウヌ･･･
+
+20
+jp: しかし、なぜこんなに\N大勢おるのだ？
+
+21
+jp: 恐らく本のモンスターの\Nしわざだろう･･･
+
+22
+jp: 気をつけろガッシュ！
+
+23
+jp: ニセ者でも\Nヤツは魔物だ！！
+
+24
+jp: ウヌ！！！
+
+25
+jp: 清麿！！！\Nあれを･･･！
+
+26
+jp: ！！！
+
+27
+jp: ヤツも過去に\N倒された魔物か！？
+
+28
+jp: ウヌ･･･
+
+29
+jp: それにしても\Nここは冷えるの･･･
+
+30
+jp: ！！！
+
+31
+jp: なるほど･･･
+
+32
+jp: これがヤツの術の\N正体だな･･･
+
+33
+jp: ガッシュ！
+
+34
+jp: ヤツは凍らせる術を\N使うらしい
+
+35
+jp: 動きを封じられると\Nやっかいだ！
+
+36
+jp: ウヌ｡わかったのだ！
+
+37
+jp: 行くぞ！！！
+

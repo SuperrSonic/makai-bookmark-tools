@@ -1,0 +1,76 @@
+﻿# Makai no Bookmark Dialogue Layout v1.0
+# This is a straightforward format for editing Makai no Bookmark script files.
+# You can do a variety of things with it.
+# By using \ you can specify special commands.
+# Here's a list of all commands:
+# \N        = Linebreak, specify more than 1 to insert new lines.
+# \BLACK    = Changes text color to black and outlines to white.
+# \BLUE1    = Changes text color to blue.
+# \BLUE2    = Changes outlines to blue.
+# \RED1
+# \RED2
+# \GREEN1
+# \GREEN2
+# \ORANGE
+# \RESTORE  = Changes text to the default color.
+
+
+ln: 19
+
+1
+jp: ヌオォォォ！？
+
+2
+jp: なっ･･･何だ！？\N･･･地震か！？
+
+3
+jp: き･･･清麿！？\Nあれを！！！
+
+4
+jp: こっ･･･こいつは！？
+
+5
+jp: 前に戦った･･･
+
+6
+jp: き、清麿･･･
+
+7
+jp: あ、ああ･･･
+
+8
+jp: 確かヤツは･･･
+
+9
+jp: 花で物をあやつる術を\N持った魔物･･･！
+
+10
+jp: 清麿！！！\N来るぞ！！！
+
+11
+jp: グルービーだ\Nウマゴン
+
+12
+jp: メルメルメ～
+
+13
+jp: やれやれ･･･
+
+14
+jp: またコイツと戦う事に\Nなるとはな･･･
+
+15
+jp: ウヌゥ･･･
+
+16
+jp: 先を急ごう｡清麿
+
+17
+jp: ああ！
+
+18
+jp: 急ぐのだウマゴン！
+
+19
+jp: メルメルメー！
+

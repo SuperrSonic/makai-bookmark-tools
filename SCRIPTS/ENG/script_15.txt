@@ -1,0 +1,154 @@
+﻿# Makai no Bookmark Dialogue Layout v1.0
+# This is a straightforward format for editing Makai no Bookmark script files.
+# You can do a variety of things with it.
+# By using \ you can specify special commands.
+# Here's a list of all commands:
+# \N        = Linebreak, specify more than 1 to insert new lines.
+# \BLACK    = Changes text color to black and outlines to white.
+# \BLUE1    = Changes text color to blue.
+# \BLUE2    = Changes outlines to blue.
+# \RED1
+# \RED2
+# \GREEN1
+# \GREEN2
+# \ORANGE
+# \RESTORE  = Changes text to the default color.
+
+
+ln: 45
+
+1
+jp: 清麿
+
+2
+jp: アポロ！
+
+3
+jp: 元気そうだな
+
+4
+jp: ジョーダンじゃない！
+
+5
+jp: もうクタクタだよ･･･
+
+6
+jp: それは、彼女の方じゃ\Nないのかい？
+
+7
+jp: そうだ！？
+
+8
+jp: 佐久間菜須香は！？
+
+9
+jp: 船内にいるよ
+
+10
+jp: 後で行ってあげるといい
+
+11
+jp: ああ･･･
+
+12
+jp: そういや、この船？
+
+13
+jp: ああ｡僕の持ち物だよ
+
+14
+jp: １０００人くらいは\N乗れるから
+
+15
+jp: 助けた人達にも\N窮屈な思いはさせないよ
+
+16
+jp: (さすが財閥の息子)
+
+17
+jp: それより\Nせっかく再会したんだ
+
+18
+jp: 帰りがてらに
+
+19
+jp: 今回の、冒険の話を\N聞かせておくれよ･･･
+
+20
+jp: ああ･･･
+
+21
+jp: 清麿！清麿ー！！
+
+22
+jp: うるさいなぁ\Nオレは今いそがしいんだ
+
+23
+jp: このマンガを\N見るのだ、清麿！！！
+
+24
+jp: ああ？オマモリ隊なら\Nもういいって･･･！
+
+25
+jp: ちがうのだ清麿\Nこれはマンデーなのだ！
+
+26
+jp: とにかく、これを！\Nここを見るのだ！！
+
+27
+jp: 何だよもう･･･
+
+28
+jp: 『アナザーＢ』？
+
+29
+jp: ･･･だから？
+
+30
+jp: この絵を良く見るのだ！
+
+31
+jp: この男の子･･･\N誰かに似てはおらぬか？
+
+32
+jp: 誰かって･･･
+
+33
+jp: ！？
+
+34
+jp: こ、これは･･･！\Nビブリオか！？
+
+35
+jp: 清麿！清麿！！
+
+36
+jp: 作者は、何と言う\N名前なのだ？
+
+37
+jp: 私は漢字が苦手なのだ！
+
+38
+jp: ････
+
+39
+jp: そっか･･･
+
+40
+jp: 早く！早く！\N聞かせるのだ、清麿ー！
+
+41
+jp: ハハハハハ！\Nわかったよ、ガッシュ
+
+42
+jp: 作者の名前はな･･･
+
+43
+jp: 『異世界の少年』？
+
+44
+jp: (これがビブリオの)
+
+45
+jp: (人の世界で生きる為の\N姿なんだな･･･)
+

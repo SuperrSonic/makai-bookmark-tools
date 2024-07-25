@@ -1,0 +1,160 @@
+﻿# Makai no Bookmark Dialogue Layout v1.0
+# This is a straightforward format for editing Makai no Bookmark script files.
+# You can do a variety of things with it.
+# By using \ you can specify special commands.
+# Here's a list of all commands:
+# \N        = Linebreak, specify more than 1 to insert new lines.
+# \BLACK    = Changes text color to black and outlines to white.
+# \BLUE1    = Changes text color to blue.
+# \BLUE2    = Changes outlines to blue.
+# \RED1
+# \RED2
+# \GREEN1
+# \GREEN2
+# \ORANGE
+# \RESTORE  = Changes text to the default color.
+
+
+ln: 47
+
+1
+jp: あっ！清麿さん！！！
+
+2
+jp: モチノキ商店街で
+
+3
+jp: 本のモンスターが\N暴れてます！！
+
+4
+jp: 何だって！？
+
+5
+jp: 急いで行ってみよう！
+
+6
+jp: 一般の人達がおらぬの？
+
+7
+jp: まさか･･･マンガに\Nされたんじゃ！？
+
+8
+jp: 急ぐぞ！ガッシュ！！
+
+9
+jp: ウヌ！！！
+
+10
+jp: 清麿！！！
+
+11
+jp: あの、おかしな\Nカッコウをした者は！？
+
+12
+jp: ！？
+
+13
+jp: ヤツは確か･･･\N高速移動をする魔物！
+
+14
+jp: ･･･性格も\Nとても悪かったのだ
+
+15
+jp: アイツまで実体化\Nしてるなんて･･･
+
+16
+jp: いったい\Nどうなってんだ！？
+
+17
+jp: 清麿｡本のモンスターも\N実体化した魔物も
+
+18
+jp: 両方とも\Nほうってはおけぬぞ！
+
+19
+jp: ああ｡わかってる！
+
+20
+jp: とにかく、あの魔物を\N追いかけよう！！
+
+21
+jp: ヤツだ！！！
+
+22
+jp: 清麿･･･\Nこの場所は！？
+
+23
+jp: ああ･･･
+
+24
+jp: ここはヤツを倒した\N廃ビルの屋上だったな
+
+25
+jp: (そういえば･･･)
+
+26
+jp: (実体化したレイコムと\N戦った場所も)
+
+27
+jp: (過去にレイコムを\N倒した場所だったな)
+
+28
+jp: (･･･やはり)
+
+29
+jp: (ああして\N実体化している事と)
+
+30
+jp: (何か関係が\Nあるに違いない！)
+
+31
+jp: (･･･とにかく)
+
+32
+jp: (今は戦いに\N集中しなくては！)
+
+33
+jp: ガッシュ･･･\Nヤツは動きが素早い
+
+34
+jp: ヤツの動きを\N封じる為にも･･･
+
+35
+jp: ジケルドを使って\N戦うぞ！！！
+
+36
+jp: ウヌ！わかったのだ！
+
+37
+jp: \RED1ジケルド\RESTORE\Nが使えるようになった！
+
+38
+jp: フウ･･･！\N何とか倒せたな
+
+39
+jp: ああ｡本のモンスターも\Nいなくなったみたいだ
+
+40
+jp: 一般の人達にも\N被害は少なかったみたい
+
+41
+jp: とにかく･･･
+
+42
+jp: ビブリオやナスカに\Nついて調べるのは
+
+43
+jp: こうやって敵を倒して\N行くしか無いみたいだな
+
+44
+jp: ････
+
+45
+jp: きびしい戦いになるな
+
+46
+jp: うん
+
+47
+jp: ああ･･･
+

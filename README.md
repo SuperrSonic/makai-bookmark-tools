@@ -1,3 +1,17 @@
-# Makai no Bookmark
+# Makai no Bookmark Translation Tools
 
-Converter tool coming soon.
+Makai AIO is a Windows commandline program.
+To run it you need to open command prompt, use the cd command to enter the dir where Makai AIO is stored.
+
+
+To encode a script from the repo, do the following:
+
+makai_aio -o "script.bin" -l English -e "script.txt"
+
+This means that the output is named script.bin, the language code to parse is "en", and that you want to encode the file script.txt, it should print your settings on the console and begin the conversion process.
+
+
+Encoding a script is also useful to test every line for the dialogue screen limit.
+
+Even though there's no way to tell what line is character dialogue, the console will print the limit regardless.
+It relies on checking if a character is FW (14px) or HW(7px) though some FW characters (like some bracket symbols.)

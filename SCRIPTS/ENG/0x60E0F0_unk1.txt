@@ -1,0 +1,202 @@
+﻿# Makai no Bookmark Dialogue Layout v1.0
+# This is a straightforward format for editing Makai no Bookmark script files.
+# You can do a variety of things with it.
+# By using \ you can specify special commands.
+# Here's a list of all commands:
+# \N        = Linebreak, specify more than 1 to insert new lines.
+# \BLACK    = Changes text color to black and outlines to white.
+# \BLUE1    = Changes text color to blue.
+# \BLUE2    = Changes outlines to blue.
+# \RED1
+# \RED2
+# \GREEN1
+# \GREEN2
+# \ORANGE
+# \RESTORE  = Changes text to the default color.
+
+
+ln: 61
+
+1
+jp: 　　　　　　　　　　　　　　　　　　　　　　　
+
+2
+jp: 飛
+
+3
+jp: 工
+
+4
+jp: 樹
+
+5
+jp: 水
+
+6
+jp: 精
+
+7
+jp: 魔物はたくさんいるわ｡
+
+8
+jp: まだまだ魔物は\Nいるようね⋯｡
+
+9
+jp: 魔物はすくなくなったわ｡
+
+10
+jp: かなり魔物をたおした\Nようね｡
+
+11
+jp: もうすこしですべての\N魔物をやっつけられるわ｡
+
+12
+jp: 魔物をすべてたおしたわ！
+
+13
+jp: たくさんいる
+
+14
+jp: まだまだいる
+
+15
+jp: すくなくなった
+
+16
+jp: かなりすくない
+
+17
+jp: のこりあとわずか
+
+18
+jp: 絶滅
+
+19
+jp: 属性　
+
+20
+jp: 
+
+21
+jp: 
+
+22
+jp: 
+
+23
+jp: 
+
+24
+jp: 
+
+25
+jp: ？？？？
+
+26
+jp: ？？？？
+
+27
+jp: 経験値ゲット！
+
+28
+jp: アイテムゲット
+
+29
+jp: お金
+
+30
+jp: なし
+
+31
+jp: スキルしゅうとく！
+
+32
+jp: ▼
+
+33
+jp: ????????
+
+34
+jp: これで魔物が　あまり\N近寄ってこなくなるぴょん！
+
+35
+jp: これで魔物がワラワラと\N近寄ってくるハズだぴょん！
+
+36
+jp: ｣をおぼえた！
+
+37
+jp: ひらがな
+
+38
+jp: カタカナ
+
+39
+jp: ABC
+
+40
+jp: もどる
+
+41
+jp: けどてい
+
+42
+jp: てんで弱っちい
+
+43
+jp: そこそこ強い
+
+44
+jp: 油断は禁物
+
+45
+jp: かなり強い
+
+46
+jp: 手強い相手
+
+47
+jp: 注意すべき強敵
+
+48
+jp: 格段の強さ
+
+49
+jp: 最強の魔物
+
+50
+jp: これからどんどん魔物を\N退治しまくってやるわ！
+
+51
+jp: まだまだ　じょのくち　よね\Nもっとやっつけないと！
+
+52
+jp: 悪い魔物はこのミヌートが\N放っておかないんだから！
+
+53
+jp: 魔物を　叩きのめすのって\Nメチャクチャ気持ちいいわっ
+
+54
+jp: なかなか　いいペースじゃない？\Nこのまま突っ走るわよ？
+
+55
+jp: だいぶやっつけたけど⋯⋯\Nまだ半分ってトコロかしら？
+
+56
+jp: もっともっと魔物を相手に\N戦いぬくわよ！
+
+57
+jp: うふふ　かがやかしい戦績も\Nこんなに　たまってきたわ⋯⋯
+
+58
+jp: この日記も　かなり使い込んだわ\Nはやく完成させたいな？
+
+59
+jp: 後もう少しで全部の魔物を\N相手にした事になるのね⋯⋯！
+
+60
+jp: やったぁ　これで日記も完成ね！\Nあたしってスゴイんじゃない？
+
+61
+jp: 
+

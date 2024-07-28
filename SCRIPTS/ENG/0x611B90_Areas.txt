@@ -1,0 +1,49 @@
+﻿# Makai no Bookmark Dialogue Layout v1.0
+# This is a straightforward format for editing Makai no Bookmark script files.
+# You can do a variety of things with it.
+# By using \ you can specify special commands.
+# Here's a list of all commands:
+# \N        = Linebreak, specify more than 1 to insert new lines.
+# \BLACK    = Changes text color to black and outlines to white.
+# \BLUE1    = Changes text color to blue.
+# \BLUE2    = Changes outlines to blue.
+# \RED1
+# \RED2
+# \GREEN1
+# \GREEN2
+# \ORANGE
+# \RESTORE  = Changes text to the default color.
+
+
+ln: 10
+
+1
+jp: 　　　　モチノキ町
+
+2
+jp: 　　　　　市街地
+
+3
+jp: 　　　　　妖岩島
+
+4
+jp: 　　　　 妖精の森
+
+5
+jp: 　ホーバークキャッスル
+
+6
+jp: 　　　　　 呪山
+
+7
+jp: 　　　　　武蔵島
+
+8
+jp: 　　　　モチノキ町
+
+9
+jp: 　
+
+10
+jp: 　
+

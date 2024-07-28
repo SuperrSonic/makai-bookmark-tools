@@ -1,0 +1,469 @@
+﻿# Makai no Bookmark Dialogue Layout v1.0
+# This is a straightforward format for editing Makai no Bookmark script files.
+# You can do a variety of things with it.
+# By using \ you can specify special commands.
+# Here's a list of all commands:
+# \N        = Linebreak, specify more than 1 to insert new lines.
+# \BLACK    = Changes text color to black and outlines to white.
+# \BLUE1    = Changes text color to blue.
+# \BLUE2    = Changes outlines to blue.
+# \RED1
+# \RED2
+# \GREEN1
+# \GREEN2
+# \ORANGE
+# \RESTORE  = Changes text to the default color.
+
+
+ln: 150
+
+1
+jp: ザケル　　　　　　
+
+2
+jp: ラシルド　　　　　
+
+3
+jp: ジケルド　　　　　
+
+4
+jp: ザケルガ　　　　　
+
+5
+jp: ラウザルク　　　　
+
+6
+jp: バオウ･ザケルガ　
+
+7
+jp: 　
+
+8
+jp: 　
+
+9
+jp: 　
+
+10
+jp: 　
+
+11
+jp: 　
+
+12
+jp: 　
+
+13
+jp: 　
+
+14
+jp: 　
+
+15
+jp: 　
+
+16
+jp: 　
+
+17
+jp: 　
+
+18
+jp: 　
+
+19
+jp: 　
+
+20
+jp: 　
+
+21
+jp: サイス　　　　　　
+
+22
+jp: セウシル　　　　　
+
+23
+jp: マ･セシルド　　　
+
+24
+jp: サイフォジオ　　　
+
+25
+jp: ギガ･ラ･セウシル
+
+26
+jp: 　
+
+27
+jp: 　
+
+28
+jp: 　
+
+29
+jp: 　
+
+30
+jp: 　
+
+31
+jp: 　
+
+32
+jp: 　
+
+33
+jp: 　
+
+34
+jp: 　
+
+35
+jp: 　
+
+36
+jp: 　
+
+37
+jp: 　
+
+38
+jp: 　
+
+39
+jp: 　
+
+40
+jp: 　
+
+41
+jp: ポルク　　　　　　
+
+42
+jp: ポルク：はしご　　
+
+43
+jp: ポルク：カギナワ　
+
+44
+jp: ポルク：ボート　　
+
+45
+jp: コポルク　　　　　
+
+46
+jp: 鉄のフォルゴレ　　
+
+47
+jp: ディカポルク　　　
+
+48
+jp: 　
+
+49
+jp: 　
+
+50
+jp: 　
+
+51
+jp: 　
+
+52
+jp: 　
+
+53
+jp: 　
+
+54
+jp: 　
+
+55
+jp: 　
+
+56
+jp: 　
+
+57
+jp: 　
+
+58
+jp: 　
+
+59
+jp: 　
+
+60
+jp: 　
+
+61
+jp: バオウ･ザケルガ
+
+62
+jp: ザケル
+
+63
+jp: ラウザルク
+
+64
+jp: 清磨｢･･･｣
+
+65
+jp: 　
+
+66
+jp: 　
+
+67
+jp: 　
+
+68
+jp: 　
+
+69
+jp: 　
+
+70
+jp: 　
+
+71
+jp: サイス
+
+72
+jp: ギガ･ラ･セウシル
+
+73
+jp: サイフォジオ
+
+74
+jp: 　
+
+75
+jp: 　
+
+76
+jp: 　
+
+77
+jp: 　
+
+78
+jp: 　
+
+79
+jp: 　
+
+80
+jp: 　
+
+81
+jp: ポルク
+
+82
+jp: ディカポルク
+
+83
+jp: お巣子食べていい？
+
+84
+jp: 乳酸菌飲料でも飲めよ
+
+85
+jp: コポルク
+
+86
+jp: 　
+
+87
+jp: 　
+
+88
+jp: 　
+
+89
+jp: 　
+
+90
+jp: 　
+
+91
+jp: レイス
+
+92
+jp: グラビレイ
+
+93
+jp: バベルガ･グラビドン
+
+94
+jp: リオル･レイス
+
+95
+jp: アイアン･グラビレイ
+
+96
+jp: ビドム･グラビレイ
+
+97
+jp: ギガノ･レイス
+
+98
+jp: ディオガ･グラビドン
+
+99
+jp: 　
+
+100
+jp: 　
+
+101
+jp: ゼガル
+
+102
+jp: ガンズ･ゼガル
+
+103
+jp: アムゼガル
+
+104
+jp: ゼガルガ
+
+105
+jp: ラージア･ゼルセン
+
+106
+jp: ゼルセン
+
+107
+jp: コブルク
+
+108
+jp: ミコルオ･マ･ゼガルガ
+
+109
+jp: ギガノ･ゼガル
+
+110
+jp: 　
+
+111
+jp: ゴウ･レドルク
+
+112
+jp: ガルレドルク
+
+113
+jp: ゴウ･バウレン
+
+114
+jp: ラオウ･ディバウレン
+
+115
+jp: ガンズ･バウレン
+
+116
+jp: 　
+
+117
+jp: 　
+
+118
+jp: 　
+
+119
+jp: 　
+
+120
+jp: 　
+
+121
+jp: ゾニス　　　　　　　　　
+
+122
+jp: ギガノ･ゾニス　　　　　
+
+123
+jp: ザケルガＶＳガルゾニス　
+
+124
+jp: 　
+
+125
+jp: 　
+
+126
+jp: 　
+
+127
+jp: 　
+
+128
+jp: 　
+
+129
+jp: 　
+
+130
+jp: 　
+
+131
+jp: シュドルク
+
+132
+jp: ゴウ･シュドルク
+
+133
+jp: メルメルメ～！！！
+
+134
+jp: グルービー！！！
+
+135
+jp: 　
+
+136
+jp: 　
+
+137
+jp: 　
+
+138
+jp: 　
+
+139
+jp: 　
+
+140
+jp: 　
+
+141
+jp: 　
+
+142
+jp: 　
+
+143
+jp: 　
+
+144
+jp: 　
+
+145
+jp: 　
+
+146
+jp: 　
+
+147
+jp: 　
+
+148
+jp: 　
+
+149
+jp: 　
+
+150
+jp: 　
+

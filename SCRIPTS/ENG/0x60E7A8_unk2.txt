@@ -1,0 +1,172 @@
+﻿# Makai no Bookmark Dialogue Layout v1.0
+# This is a straightforward format for editing Makai no Bookmark script files.
+# You can do a variety of things with it.
+# By using \ you can specify special commands.
+# Here's a list of all commands:
+# \N        = Linebreak, specify more than 1 to insert new lines.
+# \BLACK    = Changes text color to black and outlines to white.
+# \BLUE1    = Changes text color to blue.
+# \BLUE2    = Changes outlines to blue.
+# \RED1
+# \RED2
+# \GREEN1
+# \GREEN2
+# \ORANGE
+# \RESTORE  = Changes text to the default color.
+
+
+ln: 51
+
+1
+jp: 全体につかいますか？
+
+2
+jp: はい
+
+3
+jp: いいえ
+
+4
+jp: レベルがたりません
+
+5
+jp: 絆の力を回復しますか？
+
+6
+jp: 金色の証ROM
+
+7
+jp: かえる
+
+8
+jp: はずす
+
+9
+jp: つける
+
+10
+jp: 　
+
+11
+jp: 　
+
+12
+jp: プレイ時間
+
+13
+jp: たおした敵
+
+14
+jp: しおり]ソプリ-ト率
+
+15
+jp: 最大ＨＩＴ数
+
+16
+jp: しおり合成回数
+
+17
+jp: :
+
+18
+jp: %
+
+19
+jp: \BLUE1.
+
+20
+jp: 　
+
+21
+jp: 　
+
+22
+jp: 清磨宅周辺
+
+23
+jp: セーブしますか？
+
+24
+jp: ゲームをはじめますか？
+
+25
+jp: マップを出ますか？
+
+26
+jp: セーブデータを消しますか？
+
+27
+jp: ロードエラー
+
+28
+jp: セーブできませんでした
+
+29
+jp: 本当に消しますか？
+
+30
+jp: 　
+
+31
+jp: 　
+
+32
+jp: はい
+
+33
+jp: いいえ
+
+34
+jp: こうかんしますか？
+
+35
+jp: セーブ中です･･･
+
+36
+jp: さらに続けますか？
+
+37
+jp: 　
+
+38
+jp: 　
+
+39
+jp: 　
+
+40
+jp: 　
+
+41
+jp: 　
+
+42
+jp: はい
+
+43
+jp: いいえ
+
+44
+jp: ごうせいしますか？
+
+45
+jp: しおりが選択されていません
+
+46
+jp: 　
+
+47
+jp: 　
+
+48
+jp: 　
+
+49
+jp: 　
+
+50
+jp: 　
+
+51
+jp: 　
+

@@ -1078,9 +1078,9 @@ unsigned ConvertUTF(uint16_t code, bool patched)
 			break;
 		case 0x828D: val = 0xE68EA2; // 
 			break;
-		case 0x828E: val = 0xE3808A; // <<, not FW in-game, might be a good clue for doing a VWF without injecting code
+		case 0x828E: val = 0xE3808A; // <<
 			break;
-		case 0x828F: val = 0xE3808B; // >>, same
+		case 0x828F: val = 0xE3808B; // >>
 			break;
 		case 0x8290: val = 0xE5AB8C; // 
 			break;
@@ -2864,7 +2864,7 @@ int main (int argc, char *argv[])
 				ptrTable[1].lineptr = 0;
 				
 				// Allocate for encoded string
-				uint8_t dstBuf[4*1024] = {0};
+				uint8_t dstBuf[96*1024] = {0};
 				
 				//show me
 				//printf("Show size: 0x%X\n", fileSz);

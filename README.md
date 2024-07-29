@@ -18,4 +18,4 @@ To print the raw values to the console.
 Encoding a script is also useful to test every line for the dialogue screen limit.
 
 Even though there's no way to tell what line is character dialogue, the console will print the limit regardless.
-It relies on checking if a character is FW (14px) or HW (7px) though some FW characters (like some bracket symbols) might be less than 14px.
+It relies on checking if a character is FW (14px) or HW (7px).

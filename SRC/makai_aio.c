@@ -115,7 +115,7 @@ unsigned ConvertUTF(uint16_t code, bool patched)
 			break;
 		case 0xE01F: val = 0x4D; // Native M
 			break;
-		case 0xE020: val = patched ? 0x58 : 0x5D; // ] , now X
+		case 0xE020: val = patched ? 0xE382B3 : 0x5D; // hw KO, now X
 			break;
 		case 0xE021: val = patched ? 0x59 : 0xE382BD; // Katakana SO, now Y
 			break;
@@ -123,7 +123,7 @@ unsigned ConvertUTF(uint16_t code, bool patched)
 			break;
 		case 0xE023: val = patched ? 0x61 : 0xE383AA; // Katakana RI, now a
 			break;
-		case 0xE024: val = patched ? 0x62 : 0x2D; // Minus sign (idk), now b
+		case 0xE024: val = patched ? 0xE4B880 : 0x2D; // hw elongation, now b
 			break;
 		case 0xE025: val = patched ? 0x63 : 0xE38388; // Katakana TO, now c
 			break;

@@ -3311,7 +3311,7 @@ int main (int argc, char *argv[])
 								fprintf(fc, "\\ORANGE");
 						}
 						
-						if(readCHR == 0) {
+						if((readCHR & 0xFF) == 0) {
 							fprintf(fc, "\n\n");
 							break;
 						}

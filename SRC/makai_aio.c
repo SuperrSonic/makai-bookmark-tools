@@ -3328,6 +3328,121 @@ int main (int argc, char *argv[])
 				break;
 				
        }
+		else if(strcmp(argv[i], "-x") == 0) // load a rom and extract all HUFF/LZ files
+		{
+				++i;   //skip arg
+				x = 0; //reset parse
+				
+				printf("HUFFMAN+LZ77 Extraction Mode\n\n");
+				printf("Loading ROM: %s\n\n", argv[i]);
+				
+				int valRead = 0;
+				int fileSz = 0;
+				FILE *fp = fopen(argv[i], "rb");
+				if(fp == NULL) {
+					printf("Failed to open file!\n\nAre you casting the right spell, human?!\n\n");
+					break;
+				}
+				
+				// get file size
+				fseek(fp, 0, SEEK_END);
+				fileSz = ftell(fp);
+				
+				fseek(fp, 0, SEEK_SET);
+				
+				if(fileSz < (8*1024*1024)) {
+					printf("Not a valid file... Size is too small.\n");
+					break;
+				}
+				
+				// Check the first bytes to see if this is a ROM
+				fread(&valRead, 1, 4, fp);
+				
+				if(valRead != 0xEA00002E)
+					printf("This might not be the correct ROM.\n");
+				
+				fseek(fp, 0xA8, SEEK_SET);
+				fread(&valRead, 1, 4, fp);
+				
+				if(valRead != 0x4B52414D)
+					printf("This is definitely not the correct ROM.\n");
+				
+				printf("Scanning ROM for compressed files...\n");
+				
+				int foundCMP = 0;
+				uint32_t find = 0;
+				for(find = 0x2F0; find < fileSz; find+=4) {
+					fseek(fp, find, SEEK_SET);
+					fread(&valRead, 1, 4, fp);
+					
+					if(((valRead & 0xFF0000FF) == 0x40) && (valRead & 0xFFFF00) > 0x50000) {
+						// check huffman
+						fread(&valRead, 1, 4, fp);
+						if((valRead & 0xFF) == 0x24) { // It's huffman, take the shot
+							//++foundCMP;
+							
+							//printf("Show me ptr calc: 0x%X\n", (find << 8 | 8)); // le duhhh
+						//	printf("Show me ptr calc: 0x%X\n", (find | 8 << 24));
+							
+							// Extra check, see if it has a pointer
+							fseek(fp, 0, SEEK_SET);
+							bool foundPTR = false;
+							int vq = 0;
+							for(vq = 0x2F0; vq < fileSz; vq+=4) {
+								fseek(fp, vq, SEEK_SET);
+								fread(&valRead, 1, 4, fp);
+								
+								if(valRead == (find | 8 << 24)) { // found pointer
+									foundPTR = true;
+									++foundCMP;
+									break;
+								}
+							}
+							
+							if(!foundPTR)
+								continue;
+							
+							// NOTE: this will write 1344 files and it's like a 20 min process
+							
+							// don't write for now
+							//continue;
+							
+							// write it to a file
+							uint16_t unSz = 0; // no idea how else to do this
+							fseek(fp, find, SEEK_SET);
+							fread(&valRead, 1, 4, fp);
+							
+							unSz = valRead >> 8;
+							
+							// show me
+						//	printf("File is: 0x%X bytes.\n", unSz);
+							
+							char fileName[64] = {0};
+							uint8_t* extBuf = malloc(unSz);
+							
+							fread(extBuf, 1, unSz, fp);
+							
+							sprintf(fileName, "0x%X_file%04d.bin", find, foundCMP);
+							
+							FILE* fext = fopen(fileName, "wb");
+							fwrite(extBuf, 1, unSz, fext);
+							fclose(fext);
+							free(extBuf);
+							
+							// skip reading what we already know is not valid
+							//find += unSz; // yeah this is not a good idea
+							
+							// Only do one file for now
+							//break;
+						}
+					}
+				}
+				
+				printf("Found %d compressed files.\n", foundCMP);
+				
+				fclose(fp);
+				break;
+        }
 	   else if(strcmp(argv[i], "-t") == 0) // Print a string given as argument in MAKAI format
        {
                 ++i;   //skip arg

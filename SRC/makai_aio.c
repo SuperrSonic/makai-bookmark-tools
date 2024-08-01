@@ -782,7 +782,7 @@ unsigned ConvertUTF(uint16_t code, bool patched)
 			break;
 		case 0x81F9: val = 0xE58FAF; // 
 			break;
-		case 0x81FA: val = 0xE5B7A3; // 
+		case 0x81FA: val = 0xE88F93; // Used in Kanchome's candy line
 			break;
 		case 0x81FB: val = 0xE5AD90; // 
 			break;

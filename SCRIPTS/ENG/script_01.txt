@@ -18,13 +18,13 @@
 ln: 341
 
 1
-jp: ガッシュが新たな\N\GREEN1攻撃アクション\RESTOREを覚えました
+jp: ガッシュが新たな\N\GREEN1攻撃アクシｮﾝ\RESTOREを覚えました
 
 2
-jp: ティオが新たな\N\GREEN1攻撃アクション\RESTOREを覚えました
+jp: ティオが新たな\N\GREEN1攻撃アクシｮﾝ\RESTOREを覚えました
 
 3
-jp: キャンチョメが新たな\N\GREEN1攻撃アクション\RESTOREを覚えました
+jp: キャンチョメが新たな\N\GREEN1攻撃アクシｮﾝ\RESTOREを覚えました
 
 4
 jp: おや？\Nキャンチョメ

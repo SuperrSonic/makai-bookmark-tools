@@ -3,7 +3,7 @@
 # You can do a variety of things with it.
 # By using \ you can specify special commands.
 # Here's a list of all commands:
-# \N        = allows linebreaking, you can utilize this to insert more dialogue.
+# \N        = Linebreak, specify more than 1 to insert new lines.
 # \BLACK    = Changes text color to black and outlines to white.
 # \BLUE1    = Changes text color to blue.
 # \BLUE2    = Changes outlines to blue.
@@ -681,7 +681,7 @@ jp: 次にどちらのキャラの\NＳＡを発動させるかを
 jp: ＳＡの\RED1ジュツ演出\RESTOREの間に
 
 222
-jp: \RED1Ａボタン\RESTOREか\RED1Ｂボタン\RESTOREを\N連打\RESTOREする事で選択しマスａ
+jp: \RED1Ａボタン\RESTOREか\RED1Ｂボタン\RESTOREを\N連打\RESTOREする事で選択しマス
 
 223
 jp: 最初のＳＡに続けて\NツギのＳＡが発動しマス

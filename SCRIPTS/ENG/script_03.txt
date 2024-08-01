@@ -3,7 +3,7 @@
 # You can do a variety of things with it.
 # By using \ you can specify special commands.
 # Here's a list of all commands:
-# \N        = Linebreaks, by using more than 1 you can insert new lines.
+# \N        = Linebreak, specify more than 1 to insert new lines.
 # \BLACK    = Changes text color to black and outlines to white.
 # \BLUE1    = Changes text color to blue.
 # \BLUE2    = Changes outlines to blue.

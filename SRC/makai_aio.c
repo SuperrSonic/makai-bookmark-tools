@@ -117,7 +117,7 @@ unsigned ConvertUTF(uint16_t code, bool patched)
 			break;
 		case 0xE020: val = patched ? 0xE382B3 : 0x5D; // hw KO, now X
 			break;
-		case 0xE021: val = patched ? 0x59 : 0xE382BD; // Katakana SO, now Y
+		case 0xE021: val = patched ? 0x59 : 0xE383B3; // Katakana SO, now Y (HW 0xEFBE9D)
 			break;
 		case 0xE022: val = patched ? 0x5A : 0xE38397; // Katakana PU, now Z
 			break;
@@ -149,7 +149,7 @@ unsigned ConvertUTF(uint16_t code, bool patched)
 			break;
 		case 0xE030: val = patched ? 0x66 : 0xE382B7; // Katakana SI, now f
 			break;
-		case 0xE031: val = patched ? 0x67 : 0xE383A8; // Katakana YO, now g
+		case 0xE031: val = patched ? 0x67 : 0xE383A7; // Katakana YO, now g (HW 0xEFBDAE)
 			break;
 		case 0xE032: val = patched ? 0x68 : 0xE38090; // Thick bracket left , now h
 			break;

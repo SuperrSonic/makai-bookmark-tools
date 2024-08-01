@@ -27,13 +27,13 @@ jp: \BLUE1ハマチ
 jp: \BLUE1メジロ
 
 4
-jp: \BLUE1ブリカンブリ心のタネ心のしんめ
+jp: \BLUE1ブリ
 
 5
-jp: \BLUE1カンブリ心のタネ心のしんめ
+jp: \BLUE1カンブリ
 
 6
-jp: \BLUE1心のタネ心のしんめ
+jp: \BLUE1心のタネ
 
 7
 jp: \BLUE1心のしんめ
@@ -45,16 +45,16 @@ jp: \BLUE1心のつぼみ
 jp: \BLUE1心の花
 
 10
-jp: \BLUE1心の果実みかん
+jp: \BLUE1心の果実
 
 11
 jp: \BLUE1みかん
 
 12
-jp: \BLUE1いよかん夏みかんひこ星
+jp: \BLUE1いよかん
 
 13
-jp: \BLUE1夏みかんひこ星
+jp: \BLUE1夏みかん
 
 14
 jp: \BLUE1ひこ星
@@ -66,28 +66,28 @@ jp: \BLUE1おり姫
 jp: \BLUE1天の川
 
 17
-jp: \BLUE1半情熱き半情げどく
+jp: \BLUE1半情
 
 18
-jp: \BLUE1熱き半情げどく
+jp: \BLUE1熱き半情
 
 19
 jp: \BLUE1げどく
 
 20
-jp: \BLUE1おはらいまひ治し快足リラックス
+jp: \BLUE1おはらい
 
 21
-jp: \BLUE1まひ治し快足リラックス
+jp: \BLUE1まひ治し
 
 22
-jp: \BLUE1快足リラックス
+jp: \BLUE1快足
 
 23
 jp: \BLUE1リラックス
 
 24
-jp: \BLUE1もうどくじゅそ
+jp: \BLUE1もうどく
 
 25
 jp: \BLUE1じゅそ
@@ -99,19 +99,19 @@ jp: \BLUE1ますい
 jp: \BLUE1どんか
 
 28
-jp: \BLUE1さくらんみきわめ短剣弓矢長剣斧
+jp: \BLUE1さくらん
 
 29
-jp: \BLUE1みきわめ短剣弓矢長剣斧
+jp: \BLUE1みきわめ
 
 30
-jp: \BLUE1短剣弓矢長剣斧
+jp: \BLUE1短剣
 
 31
-jp: \BLUE1弓矢長剣斧
+jp: \BLUE1弓矢
 
 32
-jp: \BLUE1長剣斧
+jp: \BLUE1長剣
 
 33
 jp: \BLUE1斧
@@ -123,19 +123,19 @@ jp: \BLUE1槍
 jp: \BLUE1日本刀
 
 36
-jp: \BLUE1バルトロ石の守り鉛の守り銅の守り銀の守り鉄鋼の守り
+jp: \BLUE1バルトロ
 
 37
-jp: \BLUE1石の守り鉛の守り銅の守り銀の守り鉄鋼の守り
+jp: \BLUE1石の守り
 
 38
-jp: \BLUE1鉛の守り銅の守り銀の守り鉄鋼の守り
+jp: \BLUE1鉛の守り
 
 39
-jp: \BLUE1銅の守り銀の守り鉄鋼の守り
+jp: \BLUE1銅の守り
 
 40
-jp: \BLUE1銀の守り鉄鋼の守り
+jp: \BLUE1銀の守り
 
 41
 jp: \BLUE1鉄鋼の守り
@@ -144,13 +144,13 @@ jp: \BLUE1鉄鋼の守り
 jp: \BLUE1水晶の守り
 
 43
-jp: \BLUE1キクロプやさしさしたしみおもいやり
+jp: \BLUE1キクロプ
 
 44
-jp: \BLUE1やさしさしたしみおもいやり
+jp: \BLUE1やさしさ
 
 45
-jp: \BLUE1したしみおもいやり
+jp: \BLUE1したしみ
 
 46
 jp: \BLUE1おもいやり
@@ -159,19 +159,19 @@ jp: \BLUE1おもいやり
 jp: \BLUE1あたたかさ
 
 48
-jp: \BLUE1しんらいそんけいゾフィスバンタムフェザーミドル
+jp: \BLUE1しんらい
 
 49
-jp: \BLUE1そんけいゾフィスバンタムフェザーミドル
+jp: \BLUE1そんけい
 
 50
-jp: \BLUE1ゾフィスバンタムフェザーミドル
+jp: \BLUE1ゾフィス
 
 51
-jp: \BLUE1バンタムフェザーミドル
+jp: \BLUE1バンタム
 
 52
-jp: \BLUE1フェザーミドル
+jp: \BLUE1フェザー
 
 53
 jp: \BLUE1ミドル
@@ -180,16 +180,16 @@ jp: \BLUE1ミドル
 jp: \BLUE1ヘビー
 
 55
-jp: \BLUE1真心決心熱心会心成長のカギ
+jp: \BLUE1真心
 
 56
-jp: \BLUE1決心熱心会心成長のカギ
+jp: \BLUE1決心
 
 57
-jp: \BLUE1熱心会心成長のカギ
+jp: \BLUE1熱心
 
 58
-jp: \BLUE1会心成長のカギ
+jp: \BLUE1会心
 
 59
 jp: \BLUE1成長のカギ
@@ -207,34 +207,34 @@ jp: \BLUE1凸
 jp: \BLUE1凹
 
 64
-jp: \BLUE1凸凹優しい王様
+jp: \BLUE1凸凹
 
 65
 jp: \BLUE1優しい王様
 
 66
-jp: \BLUE1電撃聖母変化重力知識武道進化どくよけのろいよけ
+jp: \BLUE1電撃
 
 67
-jp: \BLUE1聖母変化重力知識武道進化どくよけのろいよけ
+jp: \BLUE1聖母
 
 68
-jp: \BLUE1変化重力知識武道進化どくよけのろいよけ
+jp: \BLUE1変化
 
 69
-jp: \BLUE1重力知識武道進化どくよけのろいよけ
+jp: \BLUE1重力
 
 70
-jp: \BLUE1知識武道進化どくよけのろいよけ
+jp: \BLUE1知識
 
 71
-jp: \BLUE1武道進化どくよけのろいよけ
+jp: \BLUE1武道
 
 72
-jp: \BLUE1進化どくよけのろいよけ
+jp: \BLUE1進化
 
 73
-jp: \BLUE1どくよけのろいよけ
+jp: \BLUE1どくよけ
 
 74
 jp: \BLUE1のろいよけ
@@ -246,7 +246,7 @@ jp: \BLUE1まひしらず
 jp: \BLUE1スローなし
 
 77
-jp: \BLUE1めいせきナオミ
+jp: \BLUE1めいせき
 
 78
 jp: \BLUE1ナオミ
@@ -255,13 +255,13 @@ jp: \BLUE1ナオミ
 jp: \BLUE1こかつの泉
 
 80
-jp: \BLUE1活力の泉心の泉
+jp: \BLUE1活力の泉
 
 81
 jp: \BLUE1心の泉
 
 82
-jp: \BLUE1神秘の泉もろは
+jp: \BLUE1神秘の泉
 
 83
 jp: \BLUE1もろは
@@ -273,10 +273,10 @@ jp: \BLUE1エース
 jp: \BLUE1ジョーカー
 
 86
-jp: \BLUE1奇跡仲間雷
+jp: \BLUE1奇跡
 
 87
-jp: \BLUE1仲間雷
+jp: \BLUE1仲間
 
 88
 jp: \BLUE1雷
@@ -300,13 +300,13 @@ jp: \BLUE1武
 jp: \BLUE1進
 
 95
-jp: \BLUE1白紙七夕退魔第六感
+jp: \BLUE1白紙
 
 96
-jp: \BLUE1七夕退魔第六感
+jp: \BLUE1七夕
 
 97
-jp: \BLUE1退魔第六感
+jp: \BLUE1退魔
 
 98
 jp: \BLUE1第六感
@@ -315,16 +315,16 @@ jp: \BLUE1第六感
 jp: \BLUE1ザバス
 
 100
-jp: \BLUE1フェインバルカンハコワリバシ魚のレシピ
+jp: \BLUE1フェイン
 
 101
-jp: \BLUE1バルカンハコワリバシ魚のレシピ
+jp: \BLUE1バルカン
 
 102
-jp: \BLUE1ハコワリバシ魚のレシピ
+jp: \BLUE1ハコ
 
 103
-jp: \BLUE1ワリバシ魚のレシピ
+jp: \BLUE1ワリバシ
 
 104
 jp: \BLUE1魚のレシピ
@@ -351,34 +351,34 @@ jp: \BLUE1凄いレシピ
 jp: \BLUE1ラウザルク
 
 112
-jp: \BLUE1セウシルコポルクザケル
+jp: \BLUE1セウシル
 
 113
-jp: \BLUE1コポルクザケル
+jp: \BLUE1コポルク
 
 114
 jp: \BLUE1ザケル
 
 115
-jp: \BLUE1ザケルガこころ
+jp: \BLUE1ザケルガ
 
 116
 jp: \BLUE1こころ
 
 117
-jp: \BLUE1よびだしロード
+jp: \BLUE1よびだし
 
 118
 jp: \BLUE1ロード
 
 119
-jp: \BLUE1電撃の証聖母の証変化の証１０１番目
+jp: \BLUE1電撃の証
 
 120
-jp: \BLUE1聖母の証変化の証１０１番目
+jp: \BLUE1聖母の証
 
 121
-jp: \BLUE1変化の証１０１番目
+jp: \BLUE1変化の証
 
 122
 jp: \BLUE1１０１番目
@@ -477,13 +477,13 @@ jp: \RED1ハマチ
 jp: \RED1メジロ
 
 154
-jp: \RED1ブリカンブリ心のタネ心のしんめ
+jp: \RED1ブリ
 
 155
-jp: \RED1カンブリ心のタネ心のしんめ
+jp: \RED1カンブリ
 
 156
-jp: \RED1心のタネ心のしんめ
+jp: \RED1心のタネ
 
 157
 jp: \RED1心のしんめ
@@ -495,16 +495,16 @@ jp: \RED1心のつぼみ
 jp: \RED1心の花
 
 160
-jp: \RED1心の果実みかん
+jp: \RED1心の果実
 
 161
 jp: \RED1みかん
 
 162
-jp: \RED1いよかん夏みかんひこ星
+jp: \RED1いよかん
 
 163
-jp: \RED1夏みかんひこ星
+jp: \RED1夏みかん
 
 164
 jp: \RED1ひこ星
@@ -516,28 +516,28 @@ jp: \RED1おり姫
 jp: \RED1天の川
 
 167
-jp: \RED1半情熱き半情げどく
+jp: \RED1半情
 
 168
-jp: \RED1熱き半情げどく
+jp: \RED1熱き半情
 
 169
 jp: \RED1げどく
 
 170
-jp: \RED1おはらいまひ治し快足リラックス
+jp: \RED1おはらい
 
 171
-jp: \RED1まひ治し快足リラックス
+jp: \RED1まひ治し
 
 172
-jp: \RED1快足リラックス
+jp: \RED1快足
 
 173
 jp: \RED1リラックス
 
 174
-jp: \RED1もうどくじゅそ
+jp: \RED1もうどく
 
 175
 jp: \RED1じゅそ
@@ -549,19 +549,19 @@ jp: \RED1ますい
 jp: \RED1どんか
 
 178
-jp: \RED1さくらんみきわめ短剣弓矢長剣斧
+jp: \RED1さくらん
 
 179
-jp: \RED1みきわめ短剣弓矢長剣斧
+jp: \RED1みきわめ
 
 180
-jp: \RED1短剣弓矢長剣斧
+jp: \RED1短剣
 
 181
-jp: \RED1弓矢長剣斧
+jp: \RED1弓矢
 
 182
-jp: \RED1長剣斧
+jp: \RED1長剣
 
 183
 jp: \RED1斧
@@ -573,19 +573,19 @@ jp: \RED1槍
 jp: \RED1日本刀
 
 186
-jp: \RED1バルトロ石の守り鉛の守り銅の守り銀の守り鉄鋼の守り
+jp: \RED1バルトロ
 
 187
-jp: \RED1石の守り鉛の守り銅の守り銀の守り鉄鋼の守り
+jp: \RED1石の守り
 
 188
-jp: \RED1鉛の守り銅の守り銀の守り鉄鋼の守り
+jp: \RED1鉛の守り
 
 189
-jp: \RED1銅の守り銀の守り鉄鋼の守り
+jp: \RED1銅の守り
 
 190
-jp: \RED1銀の守り鉄鋼の守り
+jp: \RED1銀の守り
 
 191
 jp: \RED1鉄鋼の守り
@@ -594,13 +594,13 @@ jp: \RED1鉄鋼の守り
 jp: \RED1水晶の守り
 
 193
-jp: \RED1キクロプやさしさしたしみおもいやり
+jp: \RED1キクロプ
 
 194
-jp: \RED1やさしさしたしみおもいやり
+jp: \RED1やさしさ
 
 195
-jp: \RED1したしみおもいやり
+jp: \RED1したしみ
 
 196
 jp: \RED1おもいやり
@@ -609,19 +609,19 @@ jp: \RED1おもいやり
 jp: \RED1あたたかさ
 
 198
-jp: \RED1しんらいそんけいゾフィスバンタムフェザーミドル
+jp: \RED1しんらい
 
 199
-jp: \RED1そんけいゾフィスバンタムフェザーミドル
+jp: \RED1そんけい
 
 200
-jp: \RED1ゾフィスバンタムフェザーミドル
+jp: \RED1ゾフィス
 
 201
-jp: \RED1バンタムフェザーミドル
+jp: \RED1バンタム
 
 202
-jp: \RED1フェザーミドル
+jp: \RED1フェザー
 
 203
 jp: \RED1ミドル
@@ -630,16 +630,16 @@ jp: \RED1ミドル
 jp: \RED1ヘビー
 
 205
-jp: \RED1真心決心熱心会心成長のカギ
+jp: \RED1真心
 
 206
-jp: \RED1決心熱心会心成長のカギ
+jp: \RED1決心
 
 207
-jp: \RED1熱心会心成長のカギ
+jp: \RED1熱心
 
 208
-jp: \RED1会心成長のカギ
+jp: \RED1会心
 
 209
 jp: \RED1成長のカギ
@@ -657,34 +657,34 @@ jp: \RED1凸
 jp: \RED1凹
 
 214
-jp: \RED1凸凹優しい王様
+jp: \RED1凸凹
 
 215
 jp: \RED1優しい王様
 
 216
-jp: \RED1電撃聖母変化重力知識武道進化どくよけのろいよけ
+jp: \RED1電撃
 
 217
-jp: \RED1聖母変化重力知識武道進化どくよけのろいよけ
+jp: \RED1聖母
 
 218
-jp: \RED1変化重力知識武道進化どくよけのろいよけ
+jp: \RED1変化
 
 219
-jp: \RED1重力知識武道進化どくよけのろいよけ
+jp: \RED1重力
 
 220
-jp: \RED1知識武道進化どくよけのろいよけ
+jp: \RED1知識
 
 221
-jp: \RED1武道進化どくよけのろいよけ
+jp: \RED1武道
 
 222
-jp: \RED1進化どくよけのろいよけ
+jp: \RED1進化
 
 223
-jp: \RED1どくよけのろいよけ
+jp: \RED1どくよけ
 
 224
 jp: \RED1のろいよけ
@@ -696,7 +696,7 @@ jp: \RED1まひしらず
 jp: \RED1スローなし
 
 227
-jp: \RED1めいせきナオミ
+jp: \RED1めいせき
 
 228
 jp: \RED1ナオミ
@@ -705,13 +705,13 @@ jp: \RED1ナオミ
 jp: \RED1こかつの泉
 
 230
-jp: \RED1活力の泉心の泉
+jp: \RED1活力の泉
 
 231
 jp: \RED1心の泉
 
 232
-jp: \RED1神秘の泉もろは
+jp: \RED1神秘の泉
 
 233
 jp: \RED1もろは
@@ -723,10 +723,10 @@ jp: \RED1エース
 jp: \RED1ジョーカー
 
 236
-jp: \RED1奇跡仲間雷
+jp: \RED1奇跡
 
 237
-jp: \RED1仲間雷
+jp: \RED1仲間
 
 238
 jp: \RED1雷
@@ -750,13 +750,13 @@ jp: \RED1武
 jp: \RED1進
 
 245
-jp: \RED1白紙七夕退魔第六感
+jp: \RED1白紙
 
 246
-jp: \RED1七夕退魔第六感
+jp: \RED1七夕
 
 247
-jp: \RED1退魔第六感
+jp: \RED1退魔
 
 248
 jp: \RED1第六感
@@ -765,16 +765,16 @@ jp: \RED1第六感
 jp: \RED1ザバス
 
 250
-jp: \RED1フェインバルカンハコワリバシ魚のレシピ
+jp: \RED1フェイン
 
 251
-jp: \RED1バルカンハコワリバシ魚のレシピ
+jp: \RED1バルカン
 
 252
-jp: \RED1ハコワリバシ魚のレシピ
+jp: \RED1ハコ
 
 253
-jp: \RED1ワリバシ魚のレシピ
+jp: \RED1ワリバシ
 
 254
 jp: \RED1魚のレシピ
@@ -801,34 +801,34 @@ jp: \RED1凄いレシピ
 jp: \RED1ラウザルク
 
 262
-jp: \RED1セウシルコポルクザケル
+jp: \RED1セウシル
 
 263
-jp: \RED1コポルクザケル
+jp: \RED1コポルク
 
 264
 jp: \RED1ザケル
 
 265
-jp: \RED1ザケルガこころ
+jp: \RED1ザケルガ
 
 266
 jp: \RED1こころ
 
 267
-jp: \RED1よびだしロード
+jp: \RED1よびだし
 
 268
 jp: \RED1ロード
 
 269
-jp: \RED1電撃の証聖母の証変化の証１０１番目
+jp: \RED1電撃の証
 
 270
-jp: \RED1聖母の証変化の証１０１番目
+jp: \RED1聖母の証
 
 271
-jp: \RED1変化の証１０１番目
+jp: \RED1変化の証
 
 272
 jp: \RED1１０１番目
@@ -1071,13 +1071,13 @@ jp: \RED19
 jp: \BLUE1？
 
 352
-jp: \BLUE1？？？？？
+jp: \BLUE1？？
 
 353
 jp: \BLUE1？？？
 
 354
-jp: \BLUE1？？？？？？？？？
+jp: \BLUE1？？？？
 
 355
 jp: \BLUE1？？？？？
@@ -1086,13 +1086,13 @@ jp: \BLUE1？？？？？
 jp: \RED1？
 
 357
-jp: \RED1？？？？？
+jp: \RED1？？
 
 358
 jp: \RED1？？？
 
 359
-jp: \RED1？？？？？？？？？
+jp: \RED1？？？？
 
 360
 jp: \RED1？？？？？
@@ -1104,7 +1104,7 @@ jp: \BLUE1x
 jp: \RED1x
 
 363
-jp: \RED1なし集のしおり
+jp: \RED1なし
 
 364
 jp: 所持数
@@ -1134,13 +1134,13 @@ jp: 　　　　　　　　　　　　　
 jp: \RED1－
 
 373
-jp: \RED1－－－－－
+jp: \RED1－－
 
 374
 jp: \RED1－－－
 
 375
-jp: \RED1－－－－－－－－－
+jp: \RED1－－－－
 
 376
 jp: \RED1－－－－－

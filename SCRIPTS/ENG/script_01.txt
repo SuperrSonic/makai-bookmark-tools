@@ -3,7 +3,7 @@
 # You can do a variety of things with it.
 # By using \ you can specify special commands.
 # Here's a list of all commands:
-# \N        = allows linebreaking, you can utilize this to insert more dialogue.
+# \N        = Linebreak, specify more than 1 to insert new lines.
 # \BLACK    = Changes text color to black and outlines to white.
 # \BLUE1    = Changes text color to blue.
 # \BLUE2    = Changes outlines to blue.
@@ -18,13 +18,13 @@
 ln: 341
 
 1
-jp: ガッシュが新たな\N\GREEN1攻撃アクシヨソ\RESTOREを覚えました
+jp: ガッシュが新たな\N\GREEN1攻撃アクション\RESTOREを覚えました
 
 2
-jp: ティオが新たな\N\GREEN1攻撃アクシヨソ\RESTOREを覚えました
+jp: ティオが新たな\N\GREEN1攻撃アクション\RESTOREを覚えました
 
 3
-jp: キャンチョメが新たな\N\GREEN1攻撃アクシヨソ\RESTOREを覚えました
+jp: キャンチョメが新たな\N\GREEN1攻撃アクション\RESTOREを覚えました
 
 4
 jp: おや？\Nキャンチョメ
@@ -234,7 +234,7 @@ jp: \RED1ブラゴ\RESTOREと\RED1シェリー\RESTOREが\NＳＡキャラとし
 jp: \RED1ウォンレイ\RESTOREと\RED1リィエン\RESTOREが\NＳＡキャラとして
 
 73
-jp: \RED1キッド\RESTOREと\RED1ナゾナゾ博土\RESTOREが\NＳＡキャラとして
+jp: \RED1キッド\RESTOREと\RED1ナゾナゾ博士\RESTOREが\NＳＡキャラとして
 
 74
 jp: \RED1ウマゴン\RESTOREと\RED1サンビーム\RESTOREが\NＳＡキャラとして
@@ -807,7 +807,7 @@ jp: 運を天にまかせるしか\Nないのでしょうか･･･
 jp: あっ、『天』といえば\N確か･･･
 
 264
-jp: \GREEN1星\RESTOREに関連するしおり\N同土の組合せで造れる
+jp: \GREEN1星\RESTOREに関連するしおり\N同士の組合せで造れる
 
 265
 jp: あるしおりを装備すると

@@ -115,17 +115,17 @@ unsigned ConvertUTF(uint16_t code, bool patched)
 			break;
 		case 0xE01F: val = 0x4D; // Native M
 			break;
-		case 0xE020: val = patched ? 0xE382B3 : 0x5D; // hw KO, now X
+		case 0xE020: val = patched ? 0x58 : 0xEFBDBA; // hw KO, now X
 			break;
-		case 0xE021: val = patched ? 0x59 : 0xE383B3; // Katakana SO, now Y (HW 0xEFBE9D)
+		case 0xE021: val = patched ? 0x59 : 0xEFBE9D; // Katakana SO, now Y
 			break;
 		case 0xE022: val = patched ? 0x5A : 0xE38397; // Katakana PU, now Z
 			break;
-		case 0xE023: val = patched ? 0x61 : 0xE383AA; // Katakana RI, now a
+		case 0xE023: val = patched ? 0x61 : 0xEFBE98; // Katakana RI, now a
 			break;
-		case 0xE024: val = patched ? 0xE4B880 : 0x2D; // hw elongation, now b
+		case 0xE024: val = patched ? 0x62 : 0xEFBDB0; // hw elongation, now b
 			break;
-		case 0xE025: val = patched ? 0x63 : 0xE38388; // Katakana TO, now c
+		case 0xE025: val = patched ? 0x63 : 0xEFBE84; // Katakana TO, now c
 			break;
 		case 0xE026: val = 0x3A; // :
 			break;
@@ -149,7 +149,7 @@ unsigned ConvertUTF(uint16_t code, bool patched)
 			break;
 		case 0xE030: val = patched ? 0x66 : 0xE382B7; // Katakana SI, now f
 			break;
-		case 0xE031: val = patched ? 0x67 : 0xE383A7; // Katakana YO, now g (HW 0xEFBDAE)
+		case 0xE031: val = patched ? 0x67 : 0xEFBDAE; // Katakana YO, now g
 			break;
 		case 0xE032: val = patched ? 0x68 : 0xE38090; // Thick bracket left , now h
 			break;

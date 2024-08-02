@@ -66,10 +66,10 @@ jp: \BLUE1おり姫
 jp: \BLUE1天の川
 
 17
-jp: \BLUE1半情
+jp: \BLUE1友情
 
 18
-jp: \BLUE1熱き半情
+jp: \BLUE1熱き友情
 
 19
 jp: \BLUE1げどく
@@ -516,10 +516,10 @@ jp: \RED1おり姫
 jp: \RED1天の川
 
 167
-jp: \RED1半情
+jp: \RED1友情
 
 168
-jp: \RED1熱き半情
+jp: \RED1熱き友情
 
 169
 jp: \RED1げどく

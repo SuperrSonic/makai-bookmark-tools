@@ -66,10 +66,10 @@ jp: \BLUE1おり姫のしおり\RESTOREが\N新たに合成できました
 jp: \BLUE1天の川のしおり\RESTOREが\N新たに合成できました
 
 17
-jp: \BLUE1半情のしおり\RESTOREが\N新たに合成できました
+jp: \BLUE1友情のしおり\RESTOREが\N新たに合成できました
 
 18
-jp: \BLUE1熱き半情のしおり\RESTOREが\N新たに合成できました
+jp: \BLUE1熱き友情のしおり\RESTOREが\N新たに合成できました
 
 19
 jp: \BLUE1げどくのしおり\RESTOREが\N新たに合成できました

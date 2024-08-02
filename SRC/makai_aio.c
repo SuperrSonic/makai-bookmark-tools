@@ -644,7 +644,7 @@ unsigned ConvertUTF(uint16_t code, bool patched)
 			break;
 		case 0x81B4: val = 0xE5B79D; // 
 			break;
-		case 0x81B5: val = 0xE58D8A; // 
+		case 0x81B5: val = 0xE58F8B; // 
 			break;
 		case 0x81B6: val = 0xE68385; // 
 			break;

@@ -3328,6 +3328,83 @@ int main (int argc, char *argv[])
 				break;
 				
        }
+	   else if(strcmp(argv[i], "-i") == 0) // inject scripts, sprites, and other data to a rom
+		{
+			++i;   //skip arg
+			x = 0; //reset parse
+				
+			printf("ROM Data Insertion Mode\n\n");
+			printf("Loading ROM: %s\n\n", argv[i]);
+			
+			int valRead = 0;
+			int fileSz = 0;
+			FILE *fp = fopen(argv[i], "rb");
+			if(fp == NULL) {
+				printf("Failed to open file!\n\nAre you casting the right spell, human?!\n\n");
+				break;
+			}
+			
+			// get file size
+			fseek(fp, 0, SEEK_END);
+			fileSz = ftell(fp);
+			
+			fseek(fp, 0, SEEK_SET);
+			
+			if(fileSz < (8*1024*1024)) {
+				printf("Not a valid file... Size is too small.\n");
+				break;
+			}
+			
+			// Check the first bytes to see if this is a ROM
+			fread(&valRead, 1, 4, fp);
+			
+			if(valRead != 0xEA00002E)
+				printf("This might not be the correct ROM.\n");
+			
+			fseek(fp, 0xA8, SEEK_SET);
+			fread(&valRead, 1, 4, fp);
+			
+			if(valRead != 0x4B52414D)
+				printf("This is definitely not the correct ROM.\n");
+			
+			printf("Writing copy...\n");
+			
+			// rewind
+			fseek(fp, 0, SEEK_SET);
+			
+			uint32_t romSize = 8*1024*1024; // Once everything is done this should be 16MB
+			uint8_t* romBuf = malloc(romSize);
+			fread(romBuf, 1, romSize, fp);
+			fclose(fp);
+			
+			// Apply patches to mem buffer
+			
+			// swap shiori with playerdata
+			romBuf[0x611AC] = 0x9E;
+			romBuf[0x611CE] = 0x04; // extend
+			romBuf[0x61254] = 0x88;
+			romBuf[0x61276] = 0x02; // reduce
+			
+			// Open first file to insert
+		//	fp = fopen(???, "rb");
+			
+			
+			// Create file to save the patched data
+			fp = fopen("makai_patched.gba", "wb");
+			fwrite(romBuf, 1, romSize, fp);
+			fclose(fp);
+			
+			free(romBuf);
+			
+			//printf("Beginning patches...\n");
+			
+			printf("Finished!\n");
+			
+			
+			//fseek(fp, 0, SEEK_SET);
+			
+			break;
+		}
 		else if(strcmp(argv[i], "-x") == 0) // load a rom and extract all HUFF/LZ files
 		{
 				++i;   //skip arg

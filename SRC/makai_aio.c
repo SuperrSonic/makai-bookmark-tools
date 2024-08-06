@@ -3372,6 +3372,9 @@ int main (int argc, char *argv[])
 			// rewind
 			fseek(fp, 0, SEEK_SET);
 			
+			uint32_t curSize = 0;
+			uint32_t curPos = 0x7DA0C0; // start por for inserting data
+			
 			uint32_t romSize = 8*1024*1024; // Once everything is done this should be 16MB
 			uint8_t* romBuf = malloc(romSize);
 			fread(romBuf, 1, romSize, fp);
@@ -3384,9 +3387,148 @@ int main (int argc, char *argv[])
 			romBuf[0x611CE] = 0x04; // extend
 			romBuf[0x61254] = 0x88;
 			romBuf[0x61276] = 0x02; // reduce
+			printf("Applied shiori sprite swap hack.\n");
 			
 			// Open first file to insert
-		//	fp = fopen(???, "rb");
+			// HW font
+			fp = fopen("GFX/MnB_halfwidthCHARSET_0x6328B8.bin", "rb");
+			if(fp == NULL) {
+				printf("Failed to open HW font!\n\n");
+				//break;
+			} else {
+				fseek(fp, 0, SEEK_END);
+				curSize = ftell(fp);
+				fseek(fp, 0, SEEK_SET);
+				fread(&romBuf[0x6328B8], 1, curSize, fp);
+				fclose(fp);
+				//printf("Applied halfwidth font. 0x%X\n", curSize);
+				printf("Applied halfwidth font.\n");
+			}
+			
+			// Replace the spells text that appear during gameplay
+			curSize = 0;
+			fp = fopen("GFX/MnB_fieldSpells_0x29C670.bin", "rb");
+			if(fp == NULL) {
+				printf("Failed to open field spells!\n\n");
+				//break;
+			} else {
+				fseek(fp, 0, SEEK_END);
+				curSize = ftell(fp);
+				fseek(fp, 0, SEEK_SET);
+				fread(&romBuf[0x29C670], 1, curSize, fp);
+				fclose(fp);
+				printf("Applied field spells sprites.\n");
+			}
+			
+			// NOTE: Last 4 bytes after each of the PMenu names are not part of the original
+			// compressed file, but I don't know what importance this has.
+			// To be safe, limiting it to the compressed data only.
+			
+			// Pause Menu names
+			curSize = 0;
+			fp = fopen("GFX/GFX_MENU/GFX_MENU_EN/ZATCH_KIYO_MENU_0x2A5E98.bin", "rb");
+			if(fp == NULL) {
+				printf("Failed to open Zatch-Kiyo PauseMenu names!\n\n");
+				//break;
+			} else {
+				fseek(fp, 0, SEEK_END);
+				curSize = ftell(fp);
+				fseek(fp, 0, SEEK_SET);
+				if(curSize <= 0x4C8) {
+					fread(&romBuf[0x2A5E98], 1, curSize, fp);
+					printf("Applied Zatch-Kiyo PauseMenu sprite.\n");
+				} else {
+					// Repoint, size is bigger than original
+					romBuf[0x28DEB4] = curPos;
+					romBuf[0x28DEB5] = curPos >> 8;
+					romBuf[0x28DEB6] = curPos >> 16;
+					fread(&romBuf[curPos], 1, curSize, fp);
+					curPos += curSize;
+					printf("Applied and repointed Zatch-Kiyo PauseMenu sprite.\n");
+				}
+				fclose(fp);
+			}
+			
+			curSize = 0;
+			fp = fopen("GFX/GFX_MENU/GFX_MENU_EN/TIA_MEGUMI_MENU_0x2A6364.bin", "rb");
+			if(fp == NULL) {
+				printf("Failed to open Tia-Megumi PauseMenu names!\n\n");
+				//break;
+			} else {
+				fseek(fp, 0, SEEK_END);
+				curSize = ftell(fp);
+				fseek(fp, 0, SEEK_SET);
+				if(curSize <= 0x3C8) {
+					fread(&romBuf[0x2A6364], 1, curSize, fp);
+					printf("Applied Tia-Megumi PauseMenu sprite.\n");
+				} else {
+					// Repoint, size is bigger than original
+					romBuf[0x28DEB8] = curPos;
+					romBuf[0x28DEB9] = curPos >> 8;
+					romBuf[0x28DEBA] = curPos >> 16;
+					fread(&romBuf[curPos], 1, curSize, fp);
+					curPos += curSize;
+					printf("Applied and repointed Tia-Megumi PauseMenu sprite.\n");
+				}
+				fclose(fp);
+			}
+			
+			curSize = 0;
+			fp = fopen("GFX/GFX_MENU/GFX_MENU_EN/KANCHO_FOL_MENU_0x2A6730.bin", "rb");
+			if(fp == NULL) {
+				printf("Failed to open Kancho-Folgore PauseMenu names!\n\n");
+				//break;
+			} else {
+				fseek(fp, 0, SEEK_END);
+				curSize = ftell(fp);
+				fseek(fp, 0, SEEK_SET);
+				if(curSize <= 0x460) {
+					fread(&romBuf[0x2A6730], 1, curSize, fp);
+					printf("Applied Kancho-Folgore PauseMenu sprite.\n");
+				} else {
+					// Repoint, size is bigger than original
+					romBuf[0x28DEBC] = curPos;
+					romBuf[0x28DEBD] = curPos >> 8;
+					romBuf[0x28DEBE] = curPos >> 16;
+					fread(&romBuf[curPos], 1, curSize, fp);
+					curPos += curSize;
+					printf("Applied and repointed Kancho-Folgore PauseMenu sprite.\n");
+				}
+				fclose(fp);
+			}
+			
+			// Pause Menu GFX - Status/Bookmarks/Save/Data
+			curSize = 0;
+			fp = fopen("GFX/TODO/CMP/0x2A3DB4_file0008_PauseMenu.bin", "rb");
+			if(fp == NULL) {
+				printf("Failed to open '0x2A3DB4_file0008' PauseMenu GFX!\n\n");
+				//break;
+			} else {
+				fseek(fp, 0, SEEK_END);
+				curSize = ftell(fp);
+				fseek(fp, 0, SEEK_SET);
+				if(curSize <= 0x14F4) {
+					fread(&romBuf[0x2A3DB4], 1, curSize, fp);
+					printf("Applied PauseMenu GFX sprites.\n");
+				} else {
+					// Repoint, size is bigger than original
+					romBuf[0x85CF4] = curPos;
+					romBuf[0x85CF5] = curPos >> 8;
+					romBuf[0x85CF6] = curPos >> 16;
+					
+					romBuf[0x2926EC] = curPos;
+					romBuf[0x2926ED] = curPos >> 8;
+					romBuf[0x2926EE] = curPos >> 16;
+					
+					fread(&romBuf[curPos], 1, curSize, fp);
+					curPos += curSize;
+					printf("Applied and repointed PauseMenu GFX sprites.\n");
+				}
+				fclose(fp);
+			}
+			
+			// Pause Menu GFX - Grayscale initial load
+			
 			
 			
 			// Create file to save the patched data

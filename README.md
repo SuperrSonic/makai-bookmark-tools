@@ -25,3 +25,5 @@ Makai AIO can also patch a ROM by reading the assets from this repo.
 To use this feature, run Makai AIO from the root/initial dir of the repo:
 "makai_aio -i (path to the ROM)" this will report everything being overwritten or repointed,
 and output makai_patched.gba to the same directory Makai AIO is in.
+
+Alternatively, move makai_aio.exe to the root, and drag-n-drop the ROM into "patch_rom.cmd" to avoid using command prompt.

@@ -19,3 +19,8 @@ Encoding a script is also useful to test every line for the dialogue screen limi
 
 Even though there's no way to tell what line is character dialogue, the console will print the limit regardless.
 It relies on checking if a character is FW (14px) or HW (7px).
+
+
+Makai AIO can also patch a ROM by reading the assets from this repo.
+To use this, run: makai_aio -i makai.gba (path to ROM) this will report everything being overwritten or repointed,
+and output makai_patched.gba to the same directory Makai AIO is in.

@@ -3383,8 +3383,10 @@ int main (int argc, char *argv[])
 			// Apply patches to mem buffer
 			
 			// swap shiori with playerdata
+			romBuf[0x6119E] = 0x76; // x pos Bookmarks
 			romBuf[0x611AC] = 0x9E;
 			romBuf[0x611CE] = 0x04; // extend
+			romBuf[0x61246] = 0xB0; // x pos Data
 			romBuf[0x61254] = 0x88;
 			romBuf[0x61276] = 0x02; // reduce
 			printf("Applied shiori sprite swap hack.\n");
@@ -3497,9 +3499,9 @@ int main (int argc, char *argv[])
 				fclose(fp);
 			}
 			
-			// Pause Menu GFX - Status/Bookmarks/Save/Data
+			// Initial Pause Menu GFX - Status/Bookmarks/Save/Data, Bookmark types, stats, etc.
 			curSize = 0;
-			fp = fopen("GFX/TODO/CMP/0x2A3DB4_file0008_PauseMenu.bin", "rb");
+			fp = fopen("GFX/MISC/CMP/0x2A3DB4_file0008_PauseMenu.bin", "rb");
 			if(fp == NULL) {
 				printf("Failed to open '0x2A3DB4_file0008' PauseMenu GFX!\n\n");
 				//break;
@@ -3509,7 +3511,7 @@ int main (int argc, char *argv[])
 				fseek(fp, 0, SEEK_SET);
 				if(curSize <= 0x14F4) {
 					fread(&romBuf[0x2A3DB4], 1, curSize, fp);
-					printf("Applied PauseMenu GFX sprites.\n");
+					printf("Applied PauseMenu GFX sprites 1.\n");
 				} else {
 					// Repoint, size is bigger than original
 					romBuf[0x85CF4] = curPos;
@@ -3522,13 +3524,254 @@ int main (int argc, char *argv[])
 					
 					fread(&romBuf[curPos], 1, curSize, fp);
 					curPos += curSize;
-					printf("Applied and repointed PauseMenu GFX sprites.\n");
+					printf("Applied and repointed PauseMenu GFX sprites 1.\n");
 				}
 				fclose(fp);
 			}
 			
-			// Pause Menu GFX - Grayscale initial load
+			// Pause Menu GFX - Status/Bookmarks/Save/Data - used for reloading
+			curSize = 0;
+			fp = fopen("GFX/MISC/CMP/0x2AABC4_file0018_PauseMenuLess.bin", "rb");
+			if(fp == NULL) {
+				printf("Failed to open '0x2AABC4_file0018' PauseMenu GFX!\n\n");
+				//break;
+			} else {
+				fseek(fp, 0, SEEK_END);
+				curSize = ftell(fp);
+				fseek(fp, 0, SEEK_SET);
+				if(curSize <= 0x6C4) {
+					fread(&romBuf[0x2AABC4], 1, curSize, fp);
+					printf("Applied PauseMenu GFX sprites 2.\n");
+				} else {
+					// Repoint, size is bigger than original
+					romBuf[0x61538] = curPos;
+					romBuf[0x61539] = curPos >> 8;
+					romBuf[0x6153A] = curPos >> 16;
+					
+					fread(&romBuf[curPos], 1, curSize, fp);
+					curPos += curSize;
+					printf("Applied and repointed PauseMenu GFX sprites 2.\n");
+				}
+				fclose(fp);
+			}
 			
+			// SA - Support Actions
+			curSize = 0;
+			fp = fopen("GFX/GFX_SA/GFX_SA_EN/01_bao_yorogi.bin", "rb");
+			if(fp == NULL) {
+				printf("Failed to open '01_bao_yorogi'!\n\n");
+				//break;
+			} else {
+				fseek(fp, 0, SEEK_END);
+				curSize = ftell(fp);
+				fseek(fp, 0, SEEK_SET);
+				if(curSize <= 0x3E0) {
+					fread(&romBuf[0x56A730], 1, curSize, fp);
+					printf("Applied 01_BaoZakeruga GFX.\n");
+				} else {
+					// Repoint, size is bigger than original
+					romBuf[0x26042C] = curPos;
+					romBuf[0x26042D] = curPos >> 8;
+					romBuf[0x26042E] = curPos >> 16;
+					
+					fread(&romBuf[curPos], 1, curSize, fp);
+					curPos += curSize;
+					printf("Applied and repointed 01_BaoZakeruga GFX.\n");
+				}
+				fclose(fp);
+			}
+			
+			curSize = 0;
+			fp = fopen("GFX/GFX_SA/GFX_SA_EN/02_zaker_yorogi.bin", "rb");
+			if(fp == NULL) {
+				printf("Failed to open '02_zaker_yorogi'!\n\n");
+				//break;
+			} else {
+				fseek(fp, 0, SEEK_END);
+				curSize = ftell(fp);
+				fseek(fp, 0, SEEK_SET);
+				if(curSize <= 0x308) {
+					fread(&romBuf[0x56AB80], 1, curSize, fp);
+					printf("Applied 02_Zaker GFX.\n");
+				} else {
+					// Repoint, size is bigger than original
+					romBuf[0x260438] = curPos;
+					romBuf[0x260439] = curPos >> 8;
+					romBuf[0x26043A] = curPos >> 16;
+					
+					fread(&romBuf[curPos], 1, curSize, fp);
+					curPos += curSize;
+					printf("Applied and repointed 02_Zaker GFX.\n");
+				}
+				fclose(fp);
+			}
+			
+			curSize = 0;
+			fp = fopen("GFX/GFX_SA/GFX_SA_EN/03_zakeruga_yorogi.bin", "rb");
+			if(fp == NULL) {
+				printf("Failed to open '03_zakeruga_yorogi'!\n\n");
+				//break;
+			} else {
+				fseek(fp, 0, SEEK_END);
+				curSize = ftell(fp);
+				fseek(fp, 0, SEEK_SET);
+				if(curSize <= 0x358) {
+					fread(&romBuf[0x56AEFC], 1, curSize, fp);
+					printf("Applied 03_Zakeruga GFX.\n");
+				} else {
+					// Repoint, size is bigger than original
+					romBuf[0x260444] = curPos;
+					romBuf[0x260445] = curPos >> 8;
+					romBuf[0x260446] = curPos >> 16;
+					
+					romBuf[0x260450] = curPos;
+					romBuf[0x260451] = curPos >> 8;
+					romBuf[0x260452] = curPos >> 16;
+					
+					fread(&romBuf[curPos], 1, curSize, fp);
+					curPos += curSize;
+					printf("Applied and repointed 03_Zakeruga GFX.\n");
+				}
+				fclose(fp);
+			}
+			// NOTE: 3 and 4 both point to zakeruga
+			
+			curSize = 0;
+			fp = fopen("GFX/GFX_SA/GFX_SA_EN/05_rauzaruk_yorogi.bin", "rb");
+			if(fp == NULL) {
+				printf("Failed to open '05_rauzaruk_yorogi'!\n\n");
+				//break;
+			} else {
+				fseek(fp, 0, SEEK_END);
+				curSize = ftell(fp);
+				fseek(fp, 0, SEEK_SET);
+				if(curSize <= 0x39C) {
+					fread(&romBuf[0x56B2C4], 1, curSize, fp);
+					printf("Applied 05_Rauzaruk GFX.\n");
+				} else {
+					// Repoint, size is bigger than original
+					romBuf[0x26045C] = curPos;
+					romBuf[0x26045D] = curPos >> 8;
+					romBuf[0x26045E] = curPos >> 16;
+					
+					fread(&romBuf[curPos], 1, curSize, fp);
+					curPos += curSize;
+					printf("Applied and repointed 05_Rauzaruk GFX.\n");
+				}
+				fclose(fp);
+			}
+			
+			//0x26042C = pointer list, (n*0xC)-0xC
+			curSize = 0;
+			fp = fopen("GFX/GFX_SA/GFX_SA_EN/07_saisu_yorogi.bin", "rb");
+			if(fp == NULL) {
+				printf("Failed to open '07_saisu_yorogi'!\n\n");
+				//break;
+			} else {
+				fseek(fp, 0, SEEK_END);
+				curSize = ftell(fp);
+				fseek(fp, 0, SEEK_SET);
+				if(curSize <= 0x2EC) {
+					fread(&romBuf[0x56B810], 1, curSize, fp);
+					printf("Applied 07_Saisu GFX.\n");
+				} else {
+					// Repoint, size is bigger than original
+					uint8_t pos = 7;
+					romBuf[0x26042C+((pos*12)-12)]   = curPos;
+					romBuf[0x26042C+((pos*12)-12)+1] = curPos >> 8;
+					romBuf[0x26042C+((pos*12)-12)+2] = curPos >> 16;
+					
+					fread(&romBuf[curPos], 1, curSize, fp);
+					curPos += curSize;
+					printf("Applied and repointed 07_Saisu GFX.\n");
+				}
+				fclose(fp);
+			}
+			
+			curSize = 0;
+			fp = fopen("GFX/GFX_SA/GFX_SA_EN/08_gigalaseoshi_yorogi.bin", "rb");
+			if(fp == NULL) {
+				printf("Failed to open '08_gigalaseoshi_yorogi'!\n\n");
+				//break;
+			} else {
+				fseek(fp, 0, SEEK_END);
+				curSize = ftell(fp);
+				fseek(fp, 0, SEEK_SET);
+				if(curSize <= 0x3E8) {
+					fread(&romBuf[0x56BB6C], 1, curSize, fp);
+					printf("Applied 08_GigaLaSeoshi GFX.\n");
+				} else {
+					// Repoint, size is bigger than original
+					uint8_t pos = 8;
+					romBuf[0x26042C+((pos*12)-12)]   = curPos;
+					romBuf[0x26042C+((pos*12)-12)+1] = curPos >> 8;
+					romBuf[0x26042C+((pos*12)-12)+2] = curPos >> 16;
+					
+					fread(&romBuf[curPos], 1, curSize, fp);
+					curPos += curSize;
+					printf("Applied and repointed 08_GigaLaSeoshi GFX.\n");
+				}
+				fclose(fp);
+			}
+			
+			curSize = 0;
+			fp = fopen("GFX/GFX_SA/GFX_SA_EN/09_saifogeo_yorogi.bin", "rb");
+			if(fp == NULL) {
+				printf("Failed to open '09_saifogeo_yorogi'!\n\n");
+				//break;
+			} else {
+				fseek(fp, 0, SEEK_END);
+				curSize = ftell(fp);
+				fseek(fp, 0, SEEK_SET);
+				if(curSize <= 0x3AC) {
+					fread(&romBuf[0x56BFC4], 1, curSize, fp);
+					printf("Applied 09_Saifogeo GFX.\n");
+				} else {
+					// Repoint, size is bigger than original
+					uint8_t pos = 9;
+					romBuf[0x26042C+((pos*12)-12)]   = curPos;
+					romBuf[0x26042C+((pos*12)-12)+1] = curPos >> 8;
+					romBuf[0x26042C+((pos*12)-12)+2] = curPos >> 16;
+					
+					fread(&romBuf[curPos], 1, curSize, fp);
+					curPos += curSize;
+					printf("Applied and repointed 09_Saifogeo GFX.\n");
+				}
+				fclose(fp);
+			}
+			
+			
+			// Script names
+			curSize = 0;
+			fp = fopen("SCRIPTS/ENG/BIN/makai_names_0x60DDAC.bin", "rb");
+			if(fp == NULL) {
+				printf("Failed to open 'makai_names_0x60DDAC'!\n\n");
+				//break;
+			} else {
+				fseek(fp, 0, SEEK_END);
+				curSize = ftell(fp);
+				fseek(fp, 0, SEEK_SET);
+				if(curSize <= 0x344) {
+					fread(&romBuf[0x60DDAC], 1, curSize, fp);
+					printf("Applied script names.\n");
+				} else {
+					// Repoint, size is bigger than original
+					romBuf[0x292364] = curPos;
+					romBuf[0x292365] = curPos >> 8;
+					romBuf[0x292366] = curPos >> 16;
+					
+					fread(&romBuf[curPos], 1, curSize, fp);
+					curPos += curSize;
+					printf("Applied and repointed script names.\n");
+				}
+				fclose(fp);
+			}
+			
+			// Script 01
+			
+			
+			// VO
+			// TODO: use a flag for this
 			
 			
 			// Create file to save the patched data

@@ -2736,6 +2736,8 @@ int main (int argc, char *argv[])
   char outName[128] = {0};
   int langID = 1; // English
   bool isROMpatched = true;
+  bool uncmpScripts = false;
+  bool altVO = false;
   bool verbose = false;
 
   printf("\n\n");
@@ -2791,6 +2793,22 @@ int main (int argc, char *argv[])
 				isROMpatched = false;
 				printf("Decoding set to original Japanese characters.\n\n");
         }
+		
+		if(strcmp(argv[i], "--no-compression") == 0) // enables hack that lets cmp scripts load from the rom
+		{
+			++i;   //skip arg
+			x = 0; //reset parse
+			
+			uncmpScripts = true;
+		}
+		
+		if(strcmp(argv[i], "--alt-vo") == 0) // inserts dub
+		{
+			++i;   //skip arg
+			x = 0; //reset parse
+			
+			altVO = true;
+		}
 		
 		if(strcmp(argv[i], "-v") == 0 || strcmp(argv[i], "--verbose") == 0) // Print more info on console
         {
@@ -3327,8 +3345,8 @@ int main (int argc, char *argv[])
 				
 				break;
 				
-       }
-	   else if(strcmp(argv[i], "-i") == 0) // inject scripts, sprites, and other data to a rom
+		}
+		else if(strcmp(argv[i], "-i") == 0) // inject scripts, sprites, and other data to a rom
 		{
 			++i;   //skip arg
 			x = 0; //reset parse
@@ -3367,7 +3385,10 @@ int main (int argc, char *argv[])
 			if(valRead != 0x4B52414D)
 				printf("This is definitely not the correct ROM.\n");
 			
-			printf("Writing copy...\n");
+			printf("Preparing patches...\n\n");
+			
+			if(uncmpScripts)
+				printf("Enabled uncompressed script loading hack.\n\n");
 			
 			// rewind
 			fseek(fp, 0, SEEK_SET);
@@ -3383,13 +3404,32 @@ int main (int argc, char *argv[])
 			// Apply patches to mem buffer
 			
 			// swap shiori with playerdata
+			romBuf[0x60A2A] = 0x76; // x pos Bookmarks
+			romBuf[0x60A38] = 0x9E;
+			romBuf[0x60A5A] = 0x04; // extend
+			romBuf[0x60AD2] = 0xB0; // x pos Data
+			romBuf[0x60AE0] = 0x88;
+			romBuf[0x60B02] = 0x02; // reduce
+			
+			// during gameplay/field
 			romBuf[0x6119E] = 0x76; // x pos Bookmarks
 			romBuf[0x611AC] = 0x9E;
 			romBuf[0x611CE] = 0x04; // extend
 			romBuf[0x61246] = 0xB0; // x pos Data
 			romBuf[0x61254] = 0x88;
 			romBuf[0x61276] = 0x02; // reduce
+			
 			printf("Applied shiori sprite swap hack.\n");
+			
+			// Load compressed scripts directly from the ROM
+		#if 1
+			if(uncmpScripts) {
+				romBuf[0x06BADC] = 0;
+				romBuf[0x06BADD] = 0;
+				romBuf[0x06BADE] = 0;
+				romBuf[0x06BADF] = 0;
+			}
+		#endif
 			
 			// Open first file to insert
 			// HW font

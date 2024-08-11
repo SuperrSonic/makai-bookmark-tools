@@ -2738,6 +2738,7 @@ int main (int argc, char *argv[])
   bool isROMpatched = true;
   bool uncmpScripts = false;
   bool altVO = false;
+  bool useCheats = false;
   bool verbose = false;
 
   printf("\n\n");
@@ -2808,6 +2809,14 @@ int main (int argc, char *argv[])
 			x = 0; //reset parse
 			
 			altVO = true;
+		}
+		
+		if(strcmp(argv[i], "--cheats") == 0) // implements easy playing
+		{
+			++i;   //skip arg
+			x = 0; //reset parse
+			
+			useCheats = true;
 		}
 		
 		if(strcmp(argv[i], "-v") == 0 || strcmp(argv[i], "--verbose") == 0) // Print more info on console
@@ -3403,6 +3412,28 @@ int main (int argc, char *argv[])
 			
 			// Apply patches to mem buffer
 			
+			// Cheats
+			if(useCheats) {
+				// Infinite SA orbs
+				romBuf[0x5594] = 0; // thumb instruction to reduce orbs
+				
+				// Reduce delay before mashing A/B on SA screens
+				romBuf[0x57C08] = 8;
+				
+				// Infinite HP
+				romBuf[0x839C] = 0;
+				romBuf[0x839D] = 0;
+				
+				// Infinite strength-from-within
+				romBuf[0x7F76] = 0; // thumb inst, strh r0,[r6,#0x4]
+				romBuf[0x7F77] = 0;
+				
+				// Quick charge spell
+				//romBuf[0x7FA2] = 4; // og: 1
+				
+				printf("Applied cheats.\n");
+			}
+			
 			// swap shiori with playerdata
 			romBuf[0x60A2A] = 0x76; // x pos Bookmarks
 			romBuf[0x60A38] = 0x9E;
@@ -3780,6 +3811,32 @@ int main (int argc, char *argv[])
 				fclose(fp);
 			}
 			
+			curSize = 0;
+			fp = fopen("GFX/GFX_SA/GFX_SA_EN/10_poruk_yorogi.bin", "rb");
+			if(fp == NULL) {
+				printf("Failed to open '10_poruk_yorogi'!\n\n");
+				//break;
+			} else {
+				fseek(fp, 0, SEEK_END);
+				curSize = ftell(fp);
+				fseek(fp, 0, SEEK_SET);
+				if(curSize <= 0x358) {
+					fread(&romBuf[0x56C3E0], 1, curSize, fp);
+					printf("Applied 10_Poruk GFX.\n");
+				} else {
+					// Repoint, size is bigger than original
+					uint8_t pos = 10;
+					romBuf[0x26042C+((pos*12)-12)]   = curPos;
+					romBuf[0x26042C+((pos*12)-12)+1] = curPos >> 8;
+					romBuf[0x26042C+((pos*12)-12)+2] = curPos >> 16;
+					
+					fread(&romBuf[curPos], 1, curSize, fp);
+					curPos += curSize;
+					printf("Applied and repointed 10_Poruk GFX.\n");
+				}
+				fclose(fp);
+			}
+			
 			
 			// Script names
 			curSize = 0;
@@ -3811,8 +3868,13 @@ int main (int argc, char *argv[])
 			
 			
 			// VO
-			// TODO: use a flag for this
-			
+			if(altVO) {
+				// English lines from MB/MF/anime
+				;
+				
+				// Spanish lines from anime
+				
+			}
 			
 			// Create file to save the patched data
 			fp = fopen("makai_patched.gba", "wb");

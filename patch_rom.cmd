@@ -1,3 +1,3 @@
 @Echo off
-"makai_aio" -i %1
+"makai_aio" --cheats -i %1
 pause

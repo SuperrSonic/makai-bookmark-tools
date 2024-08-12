@@ -3420,6 +3420,10 @@ int main (int argc, char *argv[])
 				// Reduce delay before mashing A/B on SA screens
 				romBuf[0x57C08] = 8;
 				
+				// Easy press A or B to fill SA meter quickly
+				romBuf[0x57CAC] = 2; // A
+				romBuf[0x57C3E] = 2; // B
+				
 				// Infinite HP
 				romBuf[0x839C] = 0;
 				romBuf[0x839D] = 0;
@@ -3833,6 +3837,110 @@ int main (int argc, char *argv[])
 					fread(&romBuf[curPos], 1, curSize, fp);
 					curPos += curSize;
 					printf("Applied and repointed 10_Poruk GFX.\n");
+				}
+				fclose(fp);
+			}
+			
+			curSize = 0;
+			fp = fopen("GFX/GFX_SA/GFX_SA_EN/11_dikaporuk_yorogi.bin", "rb");
+			if(fp == NULL) {
+				printf("Failed to open '11_dikaporuk_yorogi'!\n\n");
+				//break;
+			} else {
+				fseek(fp, 0, SEEK_END);
+				curSize = ftell(fp);
+				fseek(fp, 0, SEEK_SET);
+				if(curSize <= 0x3A8) {
+					fread(&romBuf[0x56C7A8], 1, curSize, fp);
+					printf("Applied 11_Dikaporuk GFX.\n");
+				} else {
+					// Repoint, size is bigger than original
+					uint8_t pos = 11;
+					romBuf[0x26042C+((pos*12)-12)]   = curPos;
+					romBuf[0x26042C+((pos*12)-12)+1] = curPos >> 8;
+					romBuf[0x26042C+((pos*12)-12)+2] = curPos >> 16;
+					
+					fread(&romBuf[curPos], 1, curSize, fp);
+					curPos += curSize;
+					printf("Applied and repointed 11_Dikaporuk GFX.\n");
+				}
+				fclose(fp);
+			}
+			
+			curSize = 0;
+			fp = fopen("GFX/GFX_SA/GFX_SA_EN/12_chichi_yorogi.bin", "rb");
+			if(fp == NULL) {
+				printf("Failed to open '12_chichi_yorogi'!\n\n");
+				//break;
+			} else {
+				fseek(fp, 0, SEEK_END);
+				curSize = ftell(fp);
+				fseek(fp, 0, SEEK_SET);
+				if(curSize <= 0x364) {
+					fread(&romBuf[0x56CBC0], 1, curSize, fp);
+					printf("Applied 12_Chichiwomoge GFX.\n");
+				} else {
+					// Repoint, size is bigger than original
+					uint8_t pos = 12;
+					romBuf[0x26042C+((pos*12)-12)]   = curPos;
+					romBuf[0x26042C+((pos*12)-12)+1] = curPos >> 8;
+					romBuf[0x26042C+((pos*12)-12)+2] = curPos >> 16;
+					
+					fread(&romBuf[curPos], 1, curSize, fp);
+					curPos += curSize;
+					printf("Applied and repointed 12_Chichiwomoge GFX.\n");
+				}
+				fclose(fp);
+			}
+			
+			curSize = 0;
+			fp = fopen("GFX/GFX_SA/GFX_SA_EN/13_okashi_yorogi.bin", "rb");
+			if(fp == NULL) {
+				printf("Failed to open '13_okashi_yorogi'!\n\n");
+				//break;
+			} else {
+				fseek(fp, 0, SEEK_END);
+				curSize = ftell(fp);
+				fseek(fp, 0, SEEK_SET);
+				if(curSize <= 0x3F8) {
+					fread(&romBuf[0x56CF94], 1, curSize, fp);
+					printf("Applied 13_Sweets GFX.\n");
+				} else {
+					// Repoint, size is bigger than original
+					uint8_t pos = 13;
+					romBuf[0x26042C+((pos*12)-12)]   = curPos;
+					romBuf[0x26042C+((pos*12)-12)+1] = curPos >> 8;
+					romBuf[0x26042C+((pos*12)-12)+2] = curPos >> 16;
+					
+					fread(&romBuf[curPos], 1, curSize, fp);
+					curPos += curSize;
+					printf("Applied and repointed 13_Sweets GFX.\n");
+				}
+				fclose(fp);
+			}
+			
+			curSize = 0;
+			fp = fopen("GFX/GFX_SA/GFX_SA_EN/14_drink_yorogi.bin", "rb");
+			if(fp == NULL) {
+				printf("Failed to open '14_drink_yorogi'!\n\n");
+				//break;
+			} else {
+				fseek(fp, 0, SEEK_END);
+				curSize = ftell(fp);
+				fseek(fp, 0, SEEK_SET);
+				if(curSize <= 0x42C) {
+					fread(&romBuf[0x56D3F8], 1, curSize, fp);
+					printf("Applied 14_Drink GFX.\n");
+				} else {
+					// Repoint, size is bigger than original
+					uint8_t pos = 14;
+					romBuf[0x26042C+((pos*12)-12)]   = curPos;
+					romBuf[0x26042C+((pos*12)-12)+1] = curPos >> 8;
+					romBuf[0x26042C+((pos*12)-12)+2] = curPos >> 16;
+					
+					fread(&romBuf[curPos], 1, curSize, fp);
+					curPos += curSize;
+					printf("Applied and repointed 14_Drink GFX.\n");
 				}
 				fclose(fp);
 			}

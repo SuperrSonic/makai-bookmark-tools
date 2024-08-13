@@ -3945,6 +3945,396 @@ int main (int argc, char *argv[])
 				fclose(fp);
 			}
 			
+			curSize = 0;
+			fp = fopen("GFX/GFX_SA/GFX_SA_EN/15_koporuk_yorogi.bin", "rb");
+			if(fp == NULL) {
+				printf("Failed to open '15_koporuk_yorogi'!\n\n");
+				//break;
+			} else {
+				fseek(fp, 0, SEEK_END);
+				curSize = ftell(fp);
+				fseek(fp, 0, SEEK_SET);
+				if(curSize <= 0x30C) {
+					fread(&romBuf[0x56D890], 1, curSize, fp);
+					printf("Applied 15_Koporuk GFX.\n");
+				} else {
+					// Repoint, size is bigger than original
+					uint8_t pos = 15;
+					romBuf[0x26042C+((pos*12)-12)]   = curPos;
+					romBuf[0x26042C+((pos*12)-12)+1] = curPos >> 8;
+					romBuf[0x26042C+((pos*12)-12)+2] = curPos >> 16;
+					
+					fread(&romBuf[curPos], 1, curSize, fp);
+					curPos += curSize;
+					printf("Applied and repointed 15_Koporuk GFX.\n");
+				}
+				fclose(fp);
+			}
+			
+			curSize = 0;
+			fp = fopen("GFX/GFX_SA/GFX_SA_EN/16_goredoruk_yorogi.bin", "rb");
+			if(fp == NULL) {
+				printf("Failed to open '16_goredoruk_yorogi'!\n\n");
+				//break;
+			} else {
+				fseek(fp, 0, SEEK_END);
+				curSize = ftell(fp);
+				fseek(fp, 0, SEEK_SET);
+				if(curSize <= 0x38C) {
+					fread(&romBuf[0x56DC0C], 1, curSize, fp);
+					printf("Applied 16_GoRedoruk GFX.\n");
+				} else {
+					// Repoint, size is bigger than original
+					uint8_t pos = 16;
+					romBuf[0x26042C+((pos*12)-12)]   = curPos;
+					romBuf[0x26042C+((pos*12)-12)+1] = curPos >> 8;
+					romBuf[0x26042C+((pos*12)-12)+2] = curPos >> 16;
+					
+					fread(&romBuf[curPos], 1, curSize, fp);
+					curPos += curSize;
+					printf("Applied and repointed 16_GoRedoruk GFX.\n");
+				}
+				fclose(fp);
+			}
+			
+			curSize = 0;
+			fp = fopen("GFX/GFX_SA/GFX_SA_EN/17_garredoruk_yorogi.bin", "rb");
+			if(fp == NULL) {
+				printf("Failed to open '17_garredoruk_yorogi'!\n\n");
+				//break;
+			} else {
+				fseek(fp, 0, SEEK_END);
+				curSize = ftell(fp);
+				fseek(fp, 0, SEEK_SET);
+				if(curSize <= 0x3A0) {
+					fread(&romBuf[0x56E008], 1, curSize, fp);
+					printf("Applied 17_GarRedoruk GFX.\n");
+				} else {
+					// Repoint, size is bigger than original
+					uint8_t pos = 17;
+					romBuf[0x26042C+((pos*12)-12)]   = curPos;
+					romBuf[0x26042C+((pos*12)-12)+1] = curPos >> 8;
+					romBuf[0x26042C+((pos*12)-12)+2] = curPos >> 16;
+					
+					fread(&romBuf[curPos], 1, curSize, fp);
+					curPos += curSize;
+					printf("Applied and repointed 17_GarRedoruk GFX.\n");
+				}
+				fclose(fp);
+			}
+			
+			curSize = 0;
+			fp = fopen("GFX/GFX_SA/GFX_SA_EN/18_goboren_yorogi.bin", "rb");
+			if(fp == NULL) {
+				printf("Failed to open '18_goboren_yorogi'!\n\n");
+				//break;
+			} else {
+				fseek(fp, 0, SEEK_END);
+				curSize = ftell(fp);
+				fseek(fp, 0, SEEK_SET);
+				if(curSize <= 0x37C) {
+					fread(&romBuf[0x56E418], 1, curSize, fp);
+					printf("Applied 18_GoBoren GFX.\n");
+				} else {
+					// Repoint, size is bigger than original
+					uint8_t pos = 18;
+					romBuf[0x26042C+((pos*12)-12)]   = curPos;
+					romBuf[0x26042C+((pos*12)-12)+1] = curPos >> 8;
+					romBuf[0x26042C+((pos*12)-12)+2] = curPos >> 16;
+					
+					fread(&romBuf[curPos], 1, curSize, fp);
+					curPos += curSize;
+					printf("Applied and repointed 18_GoBoren GFX.\n");
+				}
+				fclose(fp);
+			}
+			
+			curSize = 0;
+			fp = fopen("GFX/GFX_SA/GFX_SA_EN/19_raodiboren_yorogi.bin", "rb");
+			if(fp == NULL) {
+				printf("Failed to open '19_raodiboren_yorogi'!\n\n");
+				//break;
+			} else {
+				fseek(fp, 0, SEEK_END);
+				curSize = ftell(fp);
+				fseek(fp, 0, SEEK_SET);
+				if(curSize <= 0x3E8) {
+					fread(&romBuf[0x56E804], 1, curSize, fp);
+					printf("Applied 19_RaoDiBoren GFX.\n");
+				} else {
+					// Repoint, size is bigger than original
+					uint8_t pos = 19;
+					romBuf[0x26042C+((pos*12)-12)]   = curPos;
+					romBuf[0x26042C+((pos*12)-12)+1] = curPos >> 8;
+					romBuf[0x26042C+((pos*12)-12)+2] = curPos >> 16;
+					
+					fread(&romBuf[curPos], 1, curSize, fp);
+					curPos += curSize;
+					printf("Applied and repointed 19_RaoDiBoren GFX.\n");
+				}
+				fclose(fp);
+			}
+			
+			curSize = 0;
+			fp = fopen("GFX/GFX_SA/GFX_SA_EN/20_ganzuboren_yorogi.bin", "rb");
+			if(fp == NULL) {
+				printf("Failed to open '20_ganzuboren_yorogi'!\n\n");
+				//break;
+			} else {
+				fseek(fp, 0, SEEK_END);
+				curSize = ftell(fp);
+				fseek(fp, 0, SEEK_SET);
+				if(curSize <= 0x3E4) {
+					fread(&romBuf[0x56EC5C], 1, curSize, fp);
+					printf("Applied 20_GanzuBoren GFX.\n");
+				} else {
+					// Repoint, size is bigger than original
+					uint8_t pos = 20;
+					romBuf[0x26042C+((pos*12)-12)]   = curPos;
+					romBuf[0x26042C+((pos*12)-12)+1] = curPos >> 8;
+					romBuf[0x26042C+((pos*12)-12)+2] = curPos >> 16;
+					
+					fread(&romBuf[curPos], 1, curSize, fp);
+					curPos += curSize;
+					printf("Applied and repointed 20_GanzuBoren GFX.\n");
+				}
+				fclose(fp);
+			}
+			
+			curSize = 0;
+			fp = fopen("GFX/GFX_SA/GFX_SA_EN/21_zegar_yorogi.bin", "rb");
+			if(fp == NULL) {
+				printf("Failed to open '21_zegar_yorogi'!\n\n");
+				//break;
+			} else {
+				fseek(fp, 0, SEEK_END);
+				curSize = ftell(fp);
+				fseek(fp, 0, SEEK_SET);
+				if(curSize <= 0x334) {
+					fread(&romBuf[0x56F0B0], 1, curSize, fp);
+					printf("Applied 21_Zegar GFX.\n");
+				} else {
+					// Repoint, size is bigger than original
+					uint8_t pos = 21;
+					romBuf[0x26042C+((pos*12)-12)]   = curPos;
+					romBuf[0x26042C+((pos*12)-12)+1] = curPos >> 8;
+					romBuf[0x26042C+((pos*12)-12)+2] = curPos >> 16;
+					
+					fread(&romBuf[curPos], 1, curSize, fp);
+					curPos += curSize;
+					printf("Applied and repointed 21_Zegar GFX.\n");
+				}
+				fclose(fp);
+			}
+			
+			curSize = 0;
+			fp = fopen("GFX/GFX_SA/GFX_SA_EN/22_ganzuzegar_yorogi.bin", "rb");
+			if(fp == NULL) {
+				printf("Failed to open '22_ganzuzegar_yorogi'!\n\n");
+				//break;
+			} else {
+				fseek(fp, 0, SEEK_END);
+				curSize = ftell(fp);
+				fseek(fp, 0, SEEK_SET);
+				if(curSize <= 0x3E4) {
+					fread(&romBuf[0x56F454], 1, curSize, fp);
+					printf("Applied 22_GanzuZegar GFX.\n");
+				} else {
+					// Repoint, size is bigger than original
+					uint8_t pos = 22;
+					romBuf[0x26042C+((pos*12)-12)]   = curPos;
+					romBuf[0x26042C+((pos*12)-12)+1] = curPos >> 8;
+					romBuf[0x26042C+((pos*12)-12)+2] = curPos >> 16;
+					
+					fread(&romBuf[curPos], 1, curSize, fp);
+					curPos += curSize;
+					printf("Applied and repointed 22_GanzuZegar GFX.\n");
+				}
+				fclose(fp);
+			}
+			
+			curSize = 0;
+			fp = fopen("GFX/GFX_SA/GFX_SA_EN/23_amzegar_yorogi.bin", "rb");
+			if(fp == NULL) {
+				printf("Failed to open '23_amzegar_yorogi'!\n\n");
+				//break;
+			} else {
+				fseek(fp, 0, SEEK_END);
+				curSize = ftell(fp);
+				fseek(fp, 0, SEEK_SET);
+				if(curSize <= 0x3B0) {
+					fread(&romBuf[0x56F8A8], 1, curSize, fp);
+					printf("Applied 23_AmZegar GFX.\n");
+				} else {
+					// Repoint, size is bigger than original
+					uint8_t pos = 23;
+					romBuf[0x26042C+((pos*12)-12)]   = curPos;
+					romBuf[0x26042C+((pos*12)-12)+1] = curPos >> 8;
+					romBuf[0x26042C+((pos*12)-12)+2] = curPos >> 16;
+					
+					fread(&romBuf[curPos], 1, curSize, fp);
+					curPos += curSize;
+					printf("Applied and repointed 23_AmZegar GFX.\n");
+				}
+				fclose(fp);
+			}
+			
+			curSize = 0;
+			fp = fopen("GFX/GFX_SA/GFX_SA_EN/24_zegaruga_yorogi.bin", "rb");
+			if(fp == NULL) {
+				printf("Failed to open '24_zegaruga_yorogi'!\n\n");
+				//break;
+			} else {
+				fseek(fp, 0, SEEK_END);
+				curSize = ftell(fp);
+				fseek(fp, 0, SEEK_SET);
+				if(curSize <= 0x39C) {
+					fread(&romBuf[0x56FCC8], 1, curSize, fp);
+					printf("Applied 24_Zegaruga GFX.\n");
+				} else {
+					// Repoint, size is bigger than original
+					uint8_t pos = 24;
+					romBuf[0x26042C+((pos*12)-12)]   = curPos;
+					romBuf[0x26042C+((pos*12)-12)+1] = curPos >> 8;
+					romBuf[0x26042C+((pos*12)-12)+2] = curPos >> 16;
+					
+					fread(&romBuf[curPos], 1, curSize, fp);
+					curPos += curSize;
+					printf("Applied and repointed 24_Zegaruga GFX.\n");
+				}
+				fclose(fp);
+			}
+			
+			curSize = 0;
+			fp = fopen("GFX/GFX_SA/GFX_SA_EN/25_rajazerusen_yorogi.bin", "rb");
+			if(fp == NULL) {
+				printf("Failed to open '25_rajazerusen_yorogi'!\n\n");
+				//break;
+			} else {
+				fseek(fp, 0, SEEK_END);
+				curSize = ftell(fp);
+				fseek(fp, 0, SEEK_SET);
+				if(curSize <= 0x3BC) {
+					fread(&romBuf[0x5700D4], 1, curSize, fp);
+					printf("Applied 25_RajaZerusen GFX.\n");
+				} else {
+					// Repoint, size is bigger than original
+					uint8_t pos = 25;
+					romBuf[0x26042C+((pos*12)-12)]   = curPos;
+					romBuf[0x26042C+((pos*12)-12)+1] = curPos >> 8;
+					romBuf[0x26042C+((pos*12)-12)+2] = curPos >> 16;
+					
+					fread(&romBuf[curPos], 1, curSize, fp);
+					curPos += curSize;
+					printf("Applied and repointed 25_RajaZerusen GFX.\n");
+				}
+				fclose(fp);
+			}
+			
+			curSize = 0;
+			fp = fopen("GFX/GFX_SA/GFX_SA_EN/26_zerusen_yorogi.bin", "rb");
+			if(fp == NULL) {
+				printf("Failed to open '26_zerusen_yorogi'!\n\n");
+				//break;
+			} else {
+				fseek(fp, 0, SEEK_END);
+				curSize = ftell(fp);
+				fseek(fp, 0, SEEK_SET);
+				if(curSize <= 0x334) {
+					fread(&romBuf[0x570500], 1, curSize, fp);
+					printf("Applied 26_Zerusen GFX.\n");
+				} else {
+					// Repoint, size is bigger than original
+					uint8_t pos = 26;
+					romBuf[0x26042C+((pos*12)-12)]   = curPos;
+					romBuf[0x26042C+((pos*12)-12)+1] = curPos >> 8;
+					romBuf[0x26042C+((pos*12)-12)+2] = curPos >> 16;
+					
+					fread(&romBuf[curPos], 1, curSize, fp);
+					curPos += curSize;
+					printf("Applied and repointed 26_Zerusen GFX.\n");
+				}
+				fclose(fp);
+			}
+			
+			curSize = 0;
+			fp = fopen("GFX/GFX_SA/GFX_SA_EN/27_koboruk_yorogi.bin", "rb");
+			if(fp == NULL) {
+				printf("Failed to open '27_koboruk_yorogi'!\n\n");
+				//break;
+			} else {
+				fseek(fp, 0, SEEK_END);
+				curSize = ftell(fp);
+				fseek(fp, 0, SEEK_SET);
+				if(curSize <= 0x328) {
+					fread(&romBuf[0x5708A0], 1, curSize, fp);
+					printf("Applied 27_Koboruk GFX.\n");
+				} else {
+					// Repoint, size is bigger than original
+					uint8_t pos = 27;
+					romBuf[0x26042C+((pos*12)-12)]   = curPos;
+					romBuf[0x26042C+((pos*12)-12)+1] = curPos >> 8;
+					romBuf[0x26042C+((pos*12)-12)+2] = curPos >> 16;
+					
+					fread(&romBuf[curPos], 1, curSize, fp);
+					curPos += curSize;
+					printf("Applied and repointed 27_Koboruk GFX.\n");
+				}
+				fclose(fp);
+			}
+			
+			curSize = 0;
+			fp = fopen("GFX/GFX_SA/GFX_SA_EN/28_mikormazegaruga_yorogi.bin", "rb");
+			if(fp == NULL) {
+				printf("Failed to open '28_mikormazegaruga_yorogi'!\n\n");
+				//break;
+			} else {
+				fseek(fp, 0, SEEK_END);
+				curSize = ftell(fp);
+				fseek(fp, 0, SEEK_SET);
+				if(curSize <= 0x3FC) {
+					fread(&romBuf[0x570C38], 1, curSize, fp);
+					printf("Applied 28_MikorMaZegaruga GFX.\n");
+				} else {
+					// Repoint, size is bigger than original
+					uint8_t pos = 28;
+					romBuf[0x26042C+((pos*12)-12)]   = curPos;
+					romBuf[0x26042C+((pos*12)-12)+1] = curPos >> 8;
+					romBuf[0x26042C+((pos*12)-12)+2] = curPos >> 16;
+					
+					fread(&romBuf[curPos], 1, curSize, fp);
+					curPos += curSize;
+					printf("Applied and repointed 28_MikorMaZegaruga GFX.\n");
+				}
+				fclose(fp);
+			}
+			
+			curSize = 0;
+			fp = fopen("GFX/GFX_SA/GFX_SA_EN/29_giganozegar_yorogi.bin", "rb");
+			if(fp == NULL) {
+				printf("Failed to open '29_giganozegar_yorogi'!\n\n");
+				//break;
+			} else {
+				fseek(fp, 0, SEEK_END);
+				curSize = ftell(fp);
+				fseek(fp, 0, SEEK_SET);
+				if(curSize <= 0x3A4) {
+					fread(&romBuf[0x5710A4], 1, curSize, fp);
+					printf("Applied 29_GiganoZegar GFX.\n");
+				} else {
+					// Repoint, size is bigger than original
+					uint8_t pos = 29;
+					romBuf[0x26042C+((pos*12)-12)]   = curPos;
+					romBuf[0x26042C+((pos*12)-12)+1] = curPos >> 8;
+					romBuf[0x26042C+((pos*12)-12)+2] = curPos >> 16;
+					
+					fread(&romBuf[curPos], 1, curSize, fp);
+					curPos += curSize;
+					printf("Applied and repointed 29_GiganoZegar GFX.\n");
+				}
+				fclose(fp);
+			}
+			
 			
 			// Script names
 			curSize = 0;

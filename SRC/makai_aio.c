@@ -3630,6 +3630,72 @@ int main (int argc, char *argv[])
 				fclose(fp);
 			}
 			
+			// Scene 1 Volcan Tutorial uses a different Zaker sprite
+			curSize = 0;
+			fp = fopen("GFX/MISC/CMP/0x2A1F4C_file0005_zakeruJP.bin", "rb");
+			if(fp == NULL) {
+				printf("Failed to open '0x2A1F4C_file0005_zakeruJP' GFX!\n\n");
+				//break;
+			} else {
+				fseek(fp, 0, SEEK_END);
+				curSize = ftell(fp);
+				fseek(fp, 0, SEEK_SET);
+				if(curSize <= 0x2DC) {
+					fread(&romBuf[0x2A1F4C], 1, curSize, fp);
+					printf("Applied TutorialZaker GFX.\n");
+				} else {
+					// Repoint, size is bigger than original, NOTE: 5 references!! [4C1F2A08]
+					romBuf[0x5D0D4] = curPos;
+					romBuf[0x5D0D5] = curPos >> 8;
+					romBuf[0x5D0D6] = curPos >> 16;
+					
+					fread(&romBuf[curPos], 1, curSize, fp);
+					curPos += curSize;
+					printf("Applied and repointed TutorialZaker GFX.\n");
+				}
+				fclose(fp);
+			}
+			
+			// Status info
+			curSize = 0;
+			fp = fopen("GFX/MISC/CMP/0x2A2BEC_file0007_status.bin", "rb");
+			if(fp == NULL) {
+				printf("Failed to open '0x2A2BEC_file0007_status' GFX!\n\n");
+				//break;
+			} else {
+				fseek(fp, 0, SEEK_END);
+				curSize = ftell(fp);
+				fseek(fp, 0, SEEK_SET);
+				if(curSize <= 0x106C) {
+					fread(&romBuf[0x2A2BEC], 1, curSize, fp);
+					printf("Applied Status GFX.\n");
+				} else {
+					// Repoint, size is bigger than original, NOTE: 3 references
+					romBuf[0x77C70] = curPos;
+					romBuf[0x77C71] = curPos >> 8;
+					romBuf[0x77C72] = curPos >> 16;
+					
+					romBuf[0x85CB8] = curPos;
+					romBuf[0x85CB9] = curPos >> 8;
+					romBuf[0x85CBA] = curPos >> 16;
+					
+					romBuf[0x2926E0] = curPos;
+					romBuf[0x2926E1] = curPos >> 8;
+					romBuf[0x2926E2] = curPos >> 16;
+					
+					// palettes at 0x2A3C5C 0x130 LZ77
+					// 0x85CB8
+					
+					fread(&romBuf[curPos], 1, curSize, fp);
+					curPos += curSize;
+					printf("Applied and repointed Status GFX.\n");
+				}
+				fclose(fp);
+				
+				// Rearrange tilemap
+			//	romBuf[0x??] = ??;
+			}
+			
 			// SA - Support Actions
 			curSize = 0;
 			fp = fopen("GFX/GFX_SA/GFX_SA_EN/01_bao_yorogi.bin", "rb");
@@ -5241,6 +5307,7 @@ int main (int argc, char *argv[])
 					fread(&valRead, 1, 4, fp);
 					
 					if(((valRead & 0xFF0000FF) == 0x40) && (valRead & 0xFFFF00) > 0x50000) {
+					//if(((valRead & 0xFF0000FF) == 0x40) && (valRead & 0xFFFF00) == 0x40000) {
 						// check huffman
 						fread(&valRead, 1, 4, fp);
 						if((valRead & 0xFF) == 0x24) { // It's huffman, take the shot
@@ -5250,6 +5317,7 @@ int main (int argc, char *argv[])
 						//	printf("Show me ptr calc: 0x%X\n", (find | 8 << 24));
 							
 							// Extra check, see if it has a pointer
+						#if 1
 							fseek(fp, 0, SEEK_SET);
 							bool foundPTR = false;
 							int vq = 0;
@@ -5266,7 +5334,7 @@ int main (int argc, char *argv[])
 							
 							if(!foundPTR)
 								continue;
-							
+						#endif
 							// NOTE: this will write 1344 files and it's like a 20 min process
 							
 							// don't write for now
